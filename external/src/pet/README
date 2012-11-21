@@ -1,0 +1,69 @@
+Requirements:
+
+- pkg-config (http://www.freedesktop.org/wiki/Software/pkg-config)
+	(not needed when compiling a release using the included isl)
+- gmp (http://gmplib.org/)
+- libyaml (http://pyyaml.org/wiki/LibYAML)
+- LLVM/clang libraries, 2.9 or higher (http://clang.llvm.org/get_started.html)
+	Unless you have some other reasons for wanting to use the svn version,
+	it's best to install the latest release (3.1).
+	The svn version occasionally introduces incompatibilities.
+	Nevertheless, if you encounter any such incompatibilities, please
+	report them so that they can be fixed.
+	Also, if you are following the instructions on how to build
+	the svn version, make sure you also install LLVM
+	(through "make install").  You may want to specify an installation
+	directory using the --prefix configure option.
+
+	If you configure LLVM using cmake, you may end up with clang libraries
+	that have been compiled with -fno-rtti without this option appearing
+	in the output of "llvm-config --cxxflags".  You may then run into
+	errors about undefined reference to the 'typeinfo' of some classes.
+	You will then have to add this option manually to CXXFLAGS while
+	configuring pet.
+
+	The ubuntu package libclang-dev (3.0-3) is not sufficient as it does
+	not contain the required libraries.
+
+Preparing:
+
+Grab the latest release and extract it or get the source from
+the git repository as follows.  This process requires autoconf,
+automake and libtool.
+
+	git clone git://repo.or.cz/pet.git
+	cd pet
+	git submodule init
+	git submodule update
+	./autogen.sh
+
+Compilation:
+
+	./configure
+	make
+	make check
+
+Use:
+
+The main entry point is pet_scop_extract_from_C_source.
+This function extracts a scop from the C source file with the given name
+and returns it as a pet_scop.  The scop corresponds to the piece
+of code delimited by
+
+    #pragma scop
+
+and
+
+    #pragma endscop
+
+The code in between needs to consist only of expression statements,
+if statements and for statements.  All access relations and loop initializations
+need to be piecewise quasi-affine.  Conditions are allowed to be non-affine,
+in which case a separate statement is constructed to evaluate the condition.
+
+If the autodetect option has been set, pet will try to automatically
+detect a scop and no pragmas are required.  On the other hand, pet
+will not produce any warnings in this case as any code that does not
+satisfy the requirements is considered to lie outside of the scop.
+
+The layout of pet_scop is documented in include/pet.h.
