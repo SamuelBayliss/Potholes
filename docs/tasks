@@ -1,0 +1,10 @@
+1st Task 
+    Try intercepting Vivado Compilation Flow and Finding scops using source-based processing in PET
+    Do manual code restructuring to form function level code (with external memories in top level and perfectly and imperfectly nested loop contents encapsulated within a function call)
+    Dataflow 'should' be fairly obvious and top level can be constructed as RTL
+
+
+
+2nd Task
+    Try to redefine control flow to separate 
+    
