@@ -13,27 +13,6 @@
             <in>CMakeCXXCompilerId.cpp</in>
           </df>
           <df name="Progress">
-            <in>1</in>
-            <in>10</in>
-            <in>11</in>
-            <in>12</in>
-            <in>14</in>
-            <in>15</in>
-            <in>16</in>
-            <in>17</in>
-            <in>18</in>
-            <in>19</in>
-            <in>2</in>
-            <in>20</in>
-            <in>21</in>
-            <in>22</in>
-            <in>3</in>
-            <in>5</in>
-            <in>6</in>
-            <in>7</in>
-            <in>8</in>
-            <in>9</in>
-            <in>count.txt</in>
           </df>
         </df>
         <df name="external">
@@ -50,7 +29,6 @@
               <df name="src">
                 <df name="barvinok">
                   <df name="barvinok">
-                    <in>NTL.h</in>
                     <in>NTL_QQ.h</in>
                     <in>barvinok.h</in>
                     <in>basis_reduction.h</in>
@@ -60,7 +38,6 @@
                     <in>options.h</in>
                     <in>polylib.h</in>
                     <in>sample.h</in>
-                    <in>set.h</in>
                     <in>util.h</in>
                   </df>
                   <df name="cloog">
@@ -432,11 +409,8 @@
                         <in>aff.h</in>
                         <in>aff_type.h</in>
                         <in>arg.h</in>
-                        <in>ast.h</in>
-                        <in>ast_build.h</in>
                         <in>band.h</in>
                         <in>blk.h</in>
-                        <in>config.h</in>
                         <in>constraint.h</in>
                         <in>ctx.h</in>
                         <in>dim.h</in>
@@ -463,12 +437,9 @@
                         <in>set.h</in>
                         <in>set_type.h</in>
                         <in>space.h</in>
-                        <in>stdint.h</in>
                         <in>stream.h</in>
                         <in>union_map.h</in>
-                        <in>union_map_type.h</in>
                         <in>union_set.h</in>
-                        <in>union_set_type.h</in>
                         <in>vec.h</in>
                         <in>version.h</in>
                         <in>vertices.h</in>
@@ -489,15 +460,10 @@
                     <in>bound.c</in>
                     <in>cat.c</in>
                     <in>closure.c</in>
-                    <in>gitversion.h</in>
                     <in>isl_aff.c</in>
                     <in>isl_aff_private.h</in>
                     <in>isl_affine_hull.c</in>
                     <in>isl_arg.c</in>
-                    <in>isl_ast_build_expr.h</in>
-                    <in>isl_ast_build_private.h</in>
-                    <in>isl_ast_graft_private.h</in>
-                    <in>isl_ast_private.h</in>
                     <in>isl_band.c</in>
                     <in>isl_band_private.h</in>
                     <in>isl_basis_reduction.h</in>
@@ -507,7 +473,6 @@
                     <in>isl_bound.c</in>
                     <in>isl_bound.h</in>
                     <in>isl_coalesce.c</in>
-                    <in>isl_config.h</in>
                     <in>isl_config_post.h</in>
                     <in>isl_constraint.c</in>
                     <in>isl_constraint_private.h</in>
@@ -584,7 +549,6 @@
                     <in>isl_schedule.c</in>
                     <in>isl_schedule_private.h</in>
                     <in>isl_seq.c</in>
-                    <in>isl_sort.h</in>
                     <in>isl_space.c</in>
                     <in>isl_space_private.h</in>
                     <in>isl_stream.c</in>
@@ -592,7 +556,6 @@
                     <in>isl_tab.c</in>
                     <in>isl_tab.h</in>
                     <in>isl_tab_pip.c</in>
-                    <in>isl_tarjan.h</in>
                     <in>isl_test.c</in>
                     <in>isl_transitive_closure.c</in>
                     <in>isl_union_map.c</in>
@@ -707,7 +670,6 @@
                     <in>scop_plus.cc</in>
                     <in>scop_plus.h</in>
                     <in>scop_yaml.h</in>
-                    <in>version.h</in>
                   </df>
                   <df name="polylib">
                     <df name="applications">
@@ -823,7 +785,6 @@
                       <df name="Zpolytest">
                       </df>
                     </df>
-                    <in>config.h</in>
                     <in>mp_get_memory_functions.c</in>
                   </df>
                   <df name="polymake">
@@ -913,8 +874,6 @@
                   <in>bound.c</in>
                   <in>cone_hilbert_basis.c</in>
                   <in>cone_integer_hull.c</in>
-                  <in>confdefs.h</in>
-                  <in>config.h</in>
                   <in>conversion.cc</in>
                   <in>conversion.h</in>
                   <in>counter.cc</in>
@@ -1028,7 +987,6 @@
                   <in>verify_series.cc</in>
                   <in>verify_series.h</in>
                   <in>version.c</in>
-                  <in>version.h</in>
                   <in>vertex_cone.cc</in>
                   <in>vertex_cone.h</in>
                   <in>volume.c</in>
@@ -1056,29 +1014,13 @@
                     </df>
                     <in>version.h</in>
                   </df>
-                  <df name="confrTnIr8">
-                    <in>config.h</in>
-                  </df>
                   <df name="doc">
-                  </df>
-                  <df name="isl">
-                    <df name="include">
-                      <df name="isl">
-                        <in>config.h</in>
-                        <in>stdint.h</in>
-                      </df>
-                    </df>
-                    <in>gitversion.h</in>
-                    <in>isl_config.h</in>
                   </df>
                   <df name="isl-polylib">
                   </df>
                   <df name="parker">
                   </df>
                   <df name="polylib">
-                    <df name="confH8TCCG">
-                      <in>config.h</in>
-                    </df>
                     <df name="include">
                       <df name="polylib">
                         <in>polylib.h</in>
@@ -1463,20 +1405,7 @@
                   <in>version.h</in>
                 </df>
                 <df name="pet-build">
-                  <df name="conftest.dir">
-                    <df name="sub">
-                      <in>conftst1.h</in>
-                      <in>conftst2.h</in>
-                      <in>conftst3.h</in>
-                      <in>conftst4.h</in>
-                      <in>conftst5.h</in>
-                      <in>conftst6.h</in>
-                    </df>
-                  </df>
                   <df name="isl">
-                    <df name="confwYfzWa">
-                      <in>config.h</in>
-                    </df>
                     <df name="doc">
                     </df>
                     <df name="include">
@@ -1506,31 +1435,11 @@
             <df name="Analysis.dir">
             </df>
             <df name="Potholes.dir">
-              <in>CXX.includecache</in>
-              <in>DependInfo.cmake</in>
-              <in>build.make</in>
-              <in>cmake_clean.cmake</in>
-              <in>cmake_clean_target.cmake</in>
-              <in>depend.internal</in>
-              <in>depend.make</in>
-              <in>flags.make</in>
-              <in>link.txt</in>
-              <in>progress.make</in>
             </df>
           </df>
           <df name="gravel">
             <df name="CMakeFiles">
               <df name="gravel.dir">
-                <in>CXX.includecache</in>
-                <in>DependInfo.cmake</in>
-                <in>build.make</in>
-                <in>cmake_clean.cmake</in>
-                <in>cmake_clean_target.cmake</in>
-                <in>depend.internal</in>
-                <in>depend.make</in>
-                <in>flags.make</in>
-                <in>link.txt</in>
-                <in>progress.make</in>
               </df>
             </df>
             <df name="test">
@@ -2808,9 +2717,6 @@
           <in>VerilogValue.h</in>
         </df>
         <df name="gravel">
-          <df name="gravel">
-            <in>VerilogSymbol.h</in>
-          </df>
           <df name="include">
             <df name="gravel">
               <in>ReferenceCountedObject.h</in>
@@ -2893,21 +2799,6 @@
         <ccTool>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/barvinok/NTL.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/barvinok/set.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/cloog/include/cloog/version.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok-build/cloog/source/version.c"
             ex="false"
             tool="0"
@@ -2915,58 +2806,8 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/cloog/version.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/confrTnIr8/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/isl/gitversion.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/isl/include/isl/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/isl/include/isl/stdint.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/isl/isl_config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/polylib/confH8TCCG/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/polylib/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok-build/polylib/include/polylib/polylib.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok-build/version.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -3027,63 +2868,8 @@
           </preprocessorList>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok/NTL.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok/NTL_QQ.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok/barvinok.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok/basis_reduction.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok/evalue.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok/genfun.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok/isl.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok/options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok/polylib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/barvinok/sample.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok/set.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok/util.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -3166,11 +2952,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok_ehrhart_options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/barvinok_enumerate.cc"
             ex="false"
             tool="1"
@@ -3226,11 +3007,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok_enumerate_e_options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/barvinok_enumerate_options.c"
             ex="false"
             tool="0"
@@ -3251,11 +3027,6 @@
             <Elem>HAVE_CONFIG_H</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok_enumerate_options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/barvinok_summate.c"
             ex="false"
@@ -3315,11 +3086,6 @@
             <Elem>HAVE_CONFIG_H</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/barvinok_union_options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/basis_reduction.c"
             ex="false"
@@ -3386,11 +3152,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/bernoulli.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/bfcounter.cc"
             ex="false"
             tool="1"
@@ -3410,11 +3171,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/bfcounter.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/binomial.c"
             ex="false"
@@ -3437,11 +3193,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/binomial.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/bound.c"
             ex="false"
@@ -3471,41 +3222,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/block.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/clast.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/cloog.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/constraints.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/domain.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/input.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/int.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/isl/backend.h"
             ex="true"
             tool="3"
@@ -3523,66 +3239,6 @@
       </item>
       <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/isl/domain.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/loop.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/matrix.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/matrix/constraintset.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/names.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/pprint.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/program.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/state.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/statement.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/stride.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/union_domain.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/cloog/include/cloog/version.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -6249,16 +5905,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/confdefs.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/conversion.cc"
             ex="false"
             tool="1"
@@ -6278,11 +5924,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/conversion.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/counter.cc"
             ex="false"
@@ -6304,11 +5945,6 @@
           </preprocessorList>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/counter.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/decomposer.cc"
             ex="false"
             tool="1"
@@ -6328,11 +5964,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/decomposer.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/dpoly.cc"
             ex="false"
@@ -6354,11 +5985,6 @@
           </preprocessorList>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/dpoly.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/edomain.cc"
             ex="false"
             tool="1"
@@ -6375,11 +6001,6 @@
             <pElem>build/external/src/Darwin/src/barvinok</pElem>
           </incDir>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/edomain.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/euler.cc"
             ex="false"
@@ -6400,11 +6021,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/euler.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/evalue.c"
             ex="false"
@@ -6444,11 +6060,6 @@
             <pElem>build/external/src/Darwin/src/barvinok</pElem>
           </incDir>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/evalue_convert.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/evalue_convert_options.c"
             ex="false"
@@ -6514,11 +6125,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/evalue_read.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/evalue_util.cc"
             ex="false"
             tool="1"
@@ -6536,11 +6142,6 @@
           </incDir>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/evalue_util.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/fdstream.cc"
             ex="false"
             tool="1"
@@ -6557,11 +6158,6 @@
             <pElem>build/external/src/Darwin/src/barvinok</pElem>
           </incDir>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/fdstream.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/genfun.cc"
             ex="false"
@@ -6603,11 +6199,6 @@
           </preprocessorList>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/genfun_constructor.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/hilbert.c"
             ex="false"
             tool="0"
@@ -6629,11 +6220,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/hilbert.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/hull.c"
             ex="false"
@@ -6657,11 +6243,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/hull.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/ilp.c"
             ex="false"
             tool="0"
@@ -6684,22 +6265,12 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/ilp.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/initcdd.cc"
             ex="false"
             tool="1"
             flavor2="4">
         <ccTool>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/initcdd.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/interface/all.h"
             ex="true"
@@ -6729,21 +6300,6 @@
             <Elem>HAVE_CONFIG_H</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl-polylib/include/isl_map_polylib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl-polylib/include/isl_polylib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl-polylib/include/isl_set_polylib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl-polylib/isl_map_polylib.c"
             ex="false"
@@ -6787,237 +6343,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/gitversion.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/aff.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/aff_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/arg.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/ast.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/ast_build.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/band.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/blk.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/constraint.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/ctx.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/dim.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/flow.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/hash.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/id.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/ilp.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/int.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/list.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/local_space.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/lp.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/map.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/map_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/mat.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/multi.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/obj.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/point.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/polynomial.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/polynomial_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/printer.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/schedule.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/seq.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/set.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/set_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/space.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/stdint.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/stream.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/union_map.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/union_map_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/union_set.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/union_set_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/vec.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/version.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/include/isl/vertices.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/interface/extract_interface.cc"
             ex="false"
             tool="1"
             flavor2="4">
         <ccTool>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/interface/extract_interface.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/interface/python.cc"
             ex="false"
@@ -7026,22 +6357,12 @@
         <ccTool>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/interface/python.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_aff.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_aff_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_affine_hull.c"
             ex="false"
@@ -7057,26 +6378,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_ast_build_expr.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_ast_build_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_ast_graft_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_ast_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_band.c"
             ex="false"
             tool="0"
@@ -7084,27 +6385,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_band_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_basis_reduction.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_bernstein.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_bernstein.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_blk.c"
             ex="false"
@@ -7120,22 +6406,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_bound.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_coalesce.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_config_post.h"
             ex="true"
@@ -7148,11 +6424,6 @@
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_constraint_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_convex_hull.c"
             ex="false"
@@ -7168,11 +6439,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_ctx_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_dim.c"
             ex="false"
             tool="0"
@@ -7187,11 +6453,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_dim_map.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_equalities.c"
             ex="false"
             tool="0"
@@ -7199,22 +6460,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_equalities.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_factorization.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_factorization.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_farkas.c"
             ex="false"
@@ -7258,22 +6509,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_hmap_map_basic_set.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_id.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_id_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_ilp.c"
             ex="false"
@@ -7296,11 +6537,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_list_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_list_templ.c"
             ex="false"
             tool="0"
@@ -7308,22 +6544,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_list_templ.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_local_space.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_local_space_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_lp.c"
             ex="false"
@@ -7346,11 +6572,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_lp_piplib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_map.c"
             ex="false"
             tool="0"
@@ -7371,16 +6592,6 @@
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_map_piplib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_map_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_map_simplify.c"
             ex="false"
@@ -7403,11 +6614,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_mat_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_morph.c"
             ex="false"
             tool="0"
@@ -7415,22 +6621,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_morph.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_multi_templ.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_multi_templ.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_obj.c"
             ex="false"
@@ -7446,11 +6642,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_options_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_output.c"
             ex="false"
             tool="0"
@@ -7465,22 +6656,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_piplib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_point.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_point_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_polynomial.c"
             ex="false"
@@ -7489,22 +6670,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_polynomial_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_printer.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_printer_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_pw_templ.c"
             ex="false"
@@ -7520,22 +6691,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_qsort.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_range.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_range.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_reordering.c"
             ex="false"
@@ -7544,22 +6705,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_reordering.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_sample.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_sample.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_sample_no_piplib.c"
             ex="false"
@@ -7575,22 +6726,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_sample_piplib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_scan.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_scan.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_schedule.c"
             ex="false"
@@ -7599,22 +6740,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_schedule_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_seq.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_sort.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_space.c"
             ex="false"
@@ -7623,22 +6754,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_space_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_stream.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_stream_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_tab.c"
             ex="false"
@@ -7647,22 +6768,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_tab.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_tab_pip.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_tarjan.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_test.c"
             ex="false"
@@ -7684,11 +6795,6 @@
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_union_map_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/isl_union_templ.c"
             ex="false"
@@ -7717,11 +6823,6 @@
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl/isl_vertices_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/isl/mp_get_memory_functions.c"
             ex="false"
@@ -7803,11 +6904,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl_obj_list.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl_obj_str.c"
             ex="false"
             tool="0"
@@ -7832,11 +6928,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl_obj_str.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/isl_param_util.c"
             ex="false"
             tool="0"
@@ -7859,11 +6950,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/isl_param_util.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/lattice_point.cc"
             ex="false"
             tool="1"
@@ -7883,11 +6969,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/lattice_point.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/lattice_width.c"
             ex="false"
@@ -7911,11 +6992,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/lattice_width.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/laurent.cc"
             ex="false"
             tool="1"
@@ -7935,11 +7011,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/laurent.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/laurent_old.cc"
             ex="false"
@@ -7961,11 +7032,6 @@
           </preprocessorList>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/laurent_old.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/lexmin.cc"
             ex="false"
             tool="1"
@@ -7982,11 +7048,6 @@
             <pElem>build/external/src/Darwin/src/barvinok</pElem>
           </incDir>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/lexmin.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/lexmin_options.c"
             ex="false"
@@ -8029,11 +7090,6 @@
           </preprocessorList>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/mat_util.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/matrix_read.cc"
             ex="false"
             tool="1"
@@ -8053,11 +7109,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/matrix_read.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/mpz_divisible_p.c"
             ex="false"
@@ -8088,11 +7139,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/normalization.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/omega_interface/Exit.cc"
             ex="false"
             tool="1"
@@ -8107,22 +7153,12 @@
         <ccTool>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/omega_interface/convert.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/omega_interface/count.cc"
             ex="false"
             tool="1"
             flavor2="4">
         <ccTool>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/omega_interface/count.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/options.c"
             ex="false"
@@ -8166,11 +7202,6 @@
           </preprocessorList>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/param_polynomial.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/param_util.c"
             ex="false"
             tool="0"
@@ -8193,11 +7224,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/param_util.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/parker/construction.c"
             ex="false"
             tool="0"
@@ -8219,22 +7245,12 @@
         <ccTool>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/parker/count_solutions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/pet/emit.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/pet/include/pet.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/pet/main.c"
             ex="false"
@@ -8249,11 +7265,6 @@
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/pet/options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/pet/parse.c"
             ex="false"
@@ -8283,11 +7294,6 @@
         <ccTool>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/pet/scan.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/pet/scop.c"
             ex="false"
             tool="0"
@@ -8295,27 +7301,12 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/pet/scop.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/pet/scop_plus.cc"
             ex="false"
             tool="1"
             flavor2="4">
         <ccTool>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/pet/scop_plus.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/pet/scop_yaml.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/pet/tests/QR.c"
             ex="false"
@@ -8646,11 +7637,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/pet/version.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/polyhedron_integer_hull.c"
             ex="false"
             tool="0"
@@ -8819,111 +7805,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/Lattice.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/Matop.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/NormalForms.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/SolveDio.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/Zpolyhedron.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/alpha.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/arithmetic_errors.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/arithmetique.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/compress_parms.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/ehrhart.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/errormsg.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/eval_ehrhart.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/ext_ehrhart.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/homogenization.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/matrix.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/matrix_addon.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/matrix_permutations.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/param.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/polyhedron.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/polylib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/polylib32.h"
             ex="true"
             tool="3"
@@ -8934,47 +7815,12 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/polylibgmp.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/polyparam.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/ranking.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/types.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/include/polylib/vector.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/polylib/mp_get_memory_functions.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/source/arith/arithmetic_errors.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polylib/source/arith/arithmetique.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/polylib/source/arith/assert.h"
             ex="true"
@@ -9160,11 +8006,6 @@
         <ccTool>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/polymake/convert.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/polymake/h_star_vector.cc"
             ex="false"
             tool="1"
@@ -9200,11 +8041,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/polysign.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/polysign_cdd.cc"
             ex="false"
@@ -9341,11 +8177,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/power.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/randomtest.c"
             ex="false"
             tool="0"
@@ -9389,11 +8220,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/reduce_domain.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/reducer.cc"
             ex="false"
             tool="1"
@@ -9413,11 +8239,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/reducer.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/remove_equalities.c"
             ex="false"
@@ -9440,11 +8261,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/remove_equalities.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/remove_redundant_equalities.c"
             ex="false"
@@ -9511,11 +8327,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/scale.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/scarf.cc"
             ex="false"
             tool="1"
@@ -9535,11 +8346,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/section_array.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/semigroup_holes.cc"
             ex="false"
@@ -9595,11 +8401,6 @@
           </incDir>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/skewed_genfun.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/summate.c"
             ex="false"
             tool="0"
@@ -9621,11 +8422,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/summate.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/test.c"
             ex="false"
@@ -9714,11 +8510,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/topcom.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/util.c"
             ex="false"
             tool="0"
@@ -9783,11 +8574,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/verif_ehrhart.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/verify.c"
             ex="false"
             tool="0"
@@ -9808,11 +8594,6 @@
             <Elem>HAVE_CONFIG_H</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/verify.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/verify_lexsmaller.c"
             ex="false"
@@ -9852,11 +8633,6 @@
           </incDir>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/verify_series.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/version.c"
             ex="false"
             tool="0"
@@ -9879,11 +8655,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/version.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/vertex_cone.cc"
             ex="false"
             tool="1"
@@ -9903,11 +8674,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/vertex_cone.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/volume.c"
             ex="false"
@@ -9931,16 +8697,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/volume.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/banner.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/zsolve/cputime.c"
             ex="false"
             tool="0"
@@ -9950,11 +8706,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/cputime.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/zsolve/defs.c"
             ex="false"
@@ -9966,11 +8717,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/defs.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/zsolve/indexarray.c"
             ex="false"
             tool="0"
@@ -9980,11 +8726,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/indexarray.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/zsolve/lattice.c"
             ex="false"
@@ -9996,11 +8737,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/lattice.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/zsolve/libzsolve.c"
             ex="false"
             tool="0"
@@ -10010,11 +8746,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/libzsolve.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/zsolve/linearsystem.c"
             ex="false"
@@ -10026,11 +8757,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/linearsystem.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/zsolve/matrix.c"
             ex="false"
             tool="0"
@@ -10041,22 +8767,12 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/matrix.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/zsolve/opts.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/opts.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/zsolve/solve.c"
             ex="false"
@@ -10075,11 +8791,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/valuetrees.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/zsolve/varproperties.c"
             ex="false"
             tool="0"
@@ -10089,11 +8800,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/varproperties.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/barvinok/zsolve/vector.c"
             ex="false"
@@ -10105,11 +8811,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/vector.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/barvinok/zsolve/vectorarray.c"
             ex="false"
             tool="0"
@@ -10119,76 +8820,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/barvinok/zsolve/vectorarray.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/conftest.dir/sub/conftst1.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/conftest.dir/sub/conftst2.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/conftest.dir/sub/conftst3.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/conftest.dir/sub/conftst4.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/conftest.dir/sub/conftst5.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/conftest.dir/sub/conftst6.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/gitversion.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/isl/confwYfzWa/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/isl/gitversion.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/isl/include/isl/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/isl/include/isl/stdint.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet-build/isl/isl_config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/emit.c"
             ex="false"
@@ -10208,11 +8839,6 @@
             <Elem>HAVE_CONFIG_H</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/include/pet.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/basis_reduction_tab.c"
             ex="false"
@@ -10290,201 +8916,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/aff.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/aff_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/arg.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/band.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/blk.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/constraint.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/ctx.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/dim.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/flow.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/hash.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/id.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/ilp.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/int.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/list.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/local_space.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/lp.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/map.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/map_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/mat.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/multi.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/obj.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/point.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/polynomial.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/polynomial_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/printer.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/schedule.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/seq.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/set.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/set_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/space.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/stream.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/union_map.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/union_map_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/union_set.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/union_set_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/vec.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/version.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/include/isl/vertices.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/interface/all.h"
             ex="true"
             tool="3"
@@ -10497,22 +8928,12 @@
         <ccTool>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/interface/extract_interface.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/interface/python.cc"
             ex="false"
             tool="1"
             flavor2="4">
         <ccTool>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/interface/python.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_aff.c"
             ex="false"
@@ -10531,11 +8952,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_aff_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_affine_hull.c"
             ex="false"
@@ -10591,16 +9007,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_band_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_basis_reduction.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_bernstein.c"
             ex="false"
             tool="0"
@@ -10618,11 +9024,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_bernstein.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_blk.c"
             ex="false"
@@ -10660,11 +9061,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_bound.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_coalesce.c"
             ex="false"
             tool="0"
@@ -10683,11 +9079,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_config_post.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_constraint.c"
             ex="false"
             tool="0"
@@ -10705,11 +9096,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_constraint_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_convex_hull.c"
             ex="false"
@@ -10747,11 +9133,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_ctx_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_dim.c"
             ex="false"
             tool="0"
@@ -10788,11 +9169,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_dim_map.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_equalities.c"
             ex="false"
             tool="0"
@@ -10811,11 +9187,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_equalities.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_factorization.c"
             ex="false"
             tool="0"
@@ -10833,11 +9204,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_factorization.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_farkas.c"
             ex="false"
@@ -10947,11 +9313,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_hmap_map_basic_set.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_id.c"
             ex="false"
             tool="0"
@@ -10969,11 +9330,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_id_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_ilp.c"
             ex="false"
@@ -11029,22 +9385,12 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_list_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_list_templ.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_list_templ.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_local_space.c"
             ex="false"
@@ -11063,11 +9409,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_local_space_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_lp.c"
             ex="false"
@@ -11112,11 +9453,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_lp_piplib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_map.c"
             ex="false"
             tool="0"
@@ -11159,16 +9495,6 @@
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_map_piplib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_map_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_map_simplify.c"
             ex="false"
@@ -11224,11 +9550,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_mat_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_morph.c"
             ex="false"
             tool="0"
@@ -11247,22 +9568,12 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_morph.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_multi_templ.c"
             ex="false"
             tool="0"
             flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_multi_templ.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_obj.c"
             ex="false"
@@ -11300,11 +9611,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_options_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_output.c"
             ex="false"
             tool="0"
@@ -11330,11 +9636,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_piplib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_point.c"
             ex="false"
             tool="0"
@@ -11353,11 +9654,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_point_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_polynomial.c"
             ex="false"
             tool="0"
@@ -11375,11 +9671,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_polynomial_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_power_templ.c"
             ex="false"
@@ -11406,11 +9697,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_printer_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_pw_templ.c"
             ex="false"
             tool="0"
@@ -11436,11 +9722,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_qsort.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_range.c"
             ex="false"
             tool="0"
@@ -11458,11 +9739,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_range.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_reordering.c"
             ex="false"
@@ -11482,11 +9758,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_reordering.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_sample.c"
             ex="false"
             tool="0"
@@ -11504,11 +9775,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_sample.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_sample_no_piplib.c"
             ex="false"
@@ -11535,11 +9801,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_sample_piplib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_scan.c"
             ex="false"
             tool="0"
@@ -11558,11 +9819,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_scan.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_schedule.c"
             ex="false"
             tool="0"
@@ -11580,11 +9836,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_schedule_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_seq.c"
             ex="false"
@@ -11622,11 +9873,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_space_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_stream.c"
             ex="false"
             tool="0"
@@ -11645,11 +9891,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_stream_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_tab.c"
             ex="false"
             tool="0"
@@ -11667,11 +9908,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_tab.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_tab_pip.c"
             ex="false"
@@ -11744,11 +9980,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_union_map_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/isl/isl_union_templ.c"
             ex="false"
             tool="0"
@@ -11809,11 +10040,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </cTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/isl/isl_vertices_private.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/isl/mp_get_memory_functions.c"
             ex="false"
@@ -11970,11 +10196,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/parse.c"
             ex="false"
             tool="0"
@@ -12045,11 +10266,6 @@
           </preprocessorList>
         </ccTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/scan.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/scop.c"
             ex="false"
             tool="0"
@@ -12069,11 +10285,6 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/scop.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="build/external/src/Darwin/src/pet/scop_plus.cc"
             ex="false"
             tool="1"
@@ -12089,16 +10300,6 @@
             <Elem>PIC</Elem>
           </preprocessorList>
         </ccTool>
-      </item>
-      <item path="build/external/src/Darwin/src/pet/scop_plus.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="build/external/src/Darwin/src/pet/scop_yaml.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="build/external/src/Darwin/src/pet/tests/QR.c"
             ex="false"
@@ -12686,16 +10887,9 @@
           </preprocessorList>
         </cTool>
       </item>
-      <item path="build/external/src/Darwin/src/pet/version.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="examples/image_access.c" ex="false" tool="0" flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="examples/image_access.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="examples/sob.c" ex="false" tool="0" flavor2="2">
         <cTool>
@@ -12706,173 +10900,13 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Darwin/include/barvinok/NTL_QQ.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/barvinok/barvinok.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/barvinok/basis_reduction.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/barvinok/evalue.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/barvinok/genfun.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/barvinok/isl.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/barvinok/options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/barvinok/polylib.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/barvinok/sample.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Darwin/include/barvinok/set.h"
             ex="true"
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Darwin/include/barvinok/util.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/block.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/clast.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/cloog.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/constraints.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/domain.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/input.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/int.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/isl/backend.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/isl/cloog.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/isl/constraintset.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/isl/domain.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/loop.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/matrix.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Darwin/include/cloog/matrix/constraintset.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/names.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/pprint.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/program.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/state.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/statement.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/stride.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/union_domain.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/cloog/version.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -12891,48 +10925,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Darwin/include/isl/aff.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/aff_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/arg.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Darwin/include/isl/band.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/blk.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/constraint.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/ctx.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/dim.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -12941,33 +10935,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Darwin/include/isl/hash.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/id.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Darwin/include/isl/ilp.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/int.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/list.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/local_space.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -12976,53 +10945,13 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Darwin/include/isl/map.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/map_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/mat.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/multi.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Darwin/include/isl/obj.h"
             ex="true"
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Darwin/include/isl/options.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/point.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Darwin/include/isl/polynomial.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/polynomial_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/printer.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13036,53 +10965,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Darwin/include/isl/set.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/set_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/space.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/stdint.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Darwin/include/isl/stream.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/union_map.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/union_map_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/union_set.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/union_set_type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Darwin/include/isl/vec.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13256,28 +11140,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/AST/APValue.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/AST/AST.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/ASTConsumer.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/ASTContext.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/ASTDiagnostic.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13288,16 +11152,6 @@
       </item>
       <item path="external/install/Linux/install/include/clang/AST/ASTMutationListener.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/ASTVector.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/Attr.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13316,33 +11170,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/AST/CanonicalType.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/AST/CharUnits.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/Decl.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/DeclAccessPair.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/DeclBase.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/DeclCXX.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13351,33 +11180,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/AST/DeclFriend.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/DeclGroup.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/DeclObjC.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/DeclTemplate.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/AST/DeclVisitor.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/DeclarationName.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13391,26 +11195,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/AST/Expr.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/ExprCXX.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/ExprObjC.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/ExternalASTSource.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/AST/GlobalDecl.h"
             ex="true"
             tool="3"
@@ -13421,23 +11205,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/AST/NestedNameSpecifier.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/OperationKinds.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/AST/ParentMap.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/PrettyPrinter.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13446,68 +11215,13 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/AST/RecursiveASTVisitor.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/Redeclarable.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/SelectorLocationsKind.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/Stmt.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/StmtCXX.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/AST/StmtGraphTraits.h"
             ex="true"
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/AST/StmtIterator.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/StmtObjC.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/AST/StmtVisitor.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/TemplateBase.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/TemplateName.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/Type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/TypeLoc.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13523,16 +11237,6 @@
       </item>
       <item path="external/install/Linux/install/include/clang/AST/TypeVisitor.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/UnresolvedSet.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/AST/UsuallyTinyPtrVector.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13656,21 +11360,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Basic/AddressSpaces.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/AttrKinds.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/Builtins.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Basic/BuiltinsARM.def"
             ex="true"
             tool="3"
@@ -13693,16 +11382,6 @@
       </item>
       <item path="external/install/Linux/install/include/clang/Basic/ConvertUTF.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/DelayedCleanupPool.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/Diagnostic.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13731,11 +11410,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Basic/DiagnosticIDs.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Basic/DiagnosticIndexName.inc"
             ex="true"
             tool="3"
@@ -13751,48 +11425,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Basic/ExceptionSpecificationType.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/ExpressionTraits.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/FileManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/FileSystemOptions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Basic/FileSystemStatCache.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/IdentifierTable.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/LLVM.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/LangOptions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/Linkage.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13811,28 +11445,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Basic/OperatorKinds.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/PartialDiagnostic.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Basic/PrettyStackTrace.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/SourceLocation.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/SourceManager.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13841,53 +11455,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Basic/Specifiers.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Basic/TargetBuiltins.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/TargetInfo.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/TargetOptions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/TemplateKinds.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/TokenKinds.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/TypeTraits.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/Version.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/VersionTuple.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Basic/Visibility.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -13946,16 +11515,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Driver/Compilation.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Driver/Driver.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Driver/DriverDiagnostic.h"
             ex="true"
             tool="3"
@@ -13963,11 +11522,6 @@
       </item>
       <item path="external/install/Linux/install/include/clang/Driver/HostInfo.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Driver/Job.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14001,28 +11555,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Driver/Phases.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Driver/Tool.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Driver/ToolChain.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Driver/Types.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Driver/Util.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14036,48 +11570,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/AnalyzerOptions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Frontend/ChainedDiagnosticConsumer.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/CodeGenOptions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/CommandLineSourceLoc.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/CompilerInstance.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/CompilerInvocation.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/DependencyOutputOptions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/DiagnosticOptions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/FrontendAction.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14091,23 +11585,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/FrontendOptions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Frontend/FrontendPluginRegistry.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/HeaderSearchOptions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/LangStandard.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14121,28 +11600,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/PreprocessorOptions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/PreprocessorOutputOptions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Frontend/TextDiagnosticBuffer.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/TextDiagnosticPrinter.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Frontend/Utils.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14226,16 +11685,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Lex/CodeCompletionHandler.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Lex/DirectoryLookup.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Lex/ExternalPreprocessorSource.h"
             ex="true"
             tool="3"
@@ -14246,18 +11695,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Lex/HeaderSearch.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Lex/LexDiagnostic.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Lex/Lexer.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14266,53 +11705,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Lex/MacroInfo.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Lex/ModuleLoader.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Lex/MultipleIncludeOpt.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Lex/PPCallbacks.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Lex/PTHLexer.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Lex/PTHManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Lex/Pragma.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Lex/PreprocessingRecord.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Lex/Preprocessor.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Lex/PreprocessorLexer.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14321,18 +11715,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Lex/Token.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Lex/TokenConcatenation.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Lex/TokenLexer.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14341,18 +11725,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Parse/ParseAST.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Parse/ParseDiagnostic.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Parse/Parser.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14401,16 +11775,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Sema/AnalysisBasedWarnings.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Sema/AttributeList.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Sema/CXXFieldCollector.h"
             ex="true"
             tool="3"
@@ -14418,11 +11782,6 @@
       </item>
       <item path="external/install/Linux/install/include/clang/Sema/CodeCompleteConsumer.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Sema/DeclSpec.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14436,23 +11795,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Sema/ExternalSemaSource.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Sema/IdentifierResolver.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Sema/Initialization.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Sema/LocInfoType.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14461,23 +11805,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Sema/MultiInitializer.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Sema/ObjCMethodList.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Sema/Overload.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Sema/Ownership.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14501,18 +11830,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/clang/Sema/Sema.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/clang/Sema/SemaConsumer.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Sema/SemaDiagnostic.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14533,16 +11852,6 @@
       </item>
       <item path="external/install/Linux/install/include/clang/Sema/TemplateDeduction.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Sema/TypoCorrection.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/clang/Sema/Weak.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14856,26 +12165,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/APFloat.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/APInt.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/APSInt.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/ArrayRef.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/ADT/BitVector.h"
             ex="true"
             tool="3"
@@ -14891,16 +12180,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/DenseMap.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/DenseMapInfo.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/ADT/DenseSet.h"
             ex="true"
             tool="3"
@@ -14913,11 +12192,6 @@
       </item>
       <item path="external/install/Linux/install/include/llvm/ADT/EquivalenceClasses.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/FoldingSet.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -14966,38 +12240,13 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/IntrusiveRefCntPtr.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/ADT/NullablePtr.h"
             ex="true"
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/Optional.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/OwningPtr.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/ADT/PackedVector.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/PointerIntPair.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/PointerUnion.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -15013,11 +12262,6 @@
       </item>
       <item path="external/install/Linux/install/include/llvm/ADT/SCCIterator.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/STLExtras.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -15041,23 +12285,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/SmallPtrSet.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/ADT/SmallSet.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/SmallString.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/SmallVector.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -15076,26 +12305,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/StringMap.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/StringRef.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/StringSet.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/StringSwitch.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/ADT/TinyPtrVector.h"
             ex="true"
             tool="3"
@@ -15103,16 +12312,6 @@
       </item>
       <item path="external/install/Linux/install/include/llvm/ADT/Trie.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/Triple.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/ADT/Twine.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -15881,11 +13080,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/Config/config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/Config/llvm-config.h"
             ex="true"
             tool="3"
@@ -16406,21 +13600,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/Support/AlignOf.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/Allocator.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/Atomic.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/Support/BlockFrequency.h"
             ex="true"
             tool="3"
@@ -16451,23 +13630,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/Support/Casting.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/Support/CodeGen.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/CommandLine.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/Compiler.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -16498,11 +13662,6 @@
       </item>
       <item path="external/install/Linux/install/include/llvm/Support/DataFlow.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/DataTypes.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -16546,11 +13705,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/Support/ErrorHandling.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/Support/FEnv.h"
             ex="true"
             tool="3"
@@ -16591,11 +13745,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/Support/Host.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/Support/IRBuilder.h"
             ex="true"
             tool="3"
@@ -16631,23 +13780,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/Support/ManagedStatic.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/MathExtras.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/Support/Memory.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/MemoryBuffer.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -16681,21 +13815,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/Support/Path.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/PathV1.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/PathV2.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/Support/PatternMatch.h"
             ex="true"
             tool="3"
@@ -16706,18 +13825,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/Support/PointerLikeTypeTraits.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/Support/PredIteratorCache.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/PrettyStackTrace.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -16786,11 +13895,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/Support/SwapByteOrder.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/Support/SystemUtils.h"
             ex="true"
             tool="3"
@@ -16813,16 +13917,6 @@
       </item>
       <item path="external/install/Linux/install/include/llvm/Support/ThreadLocal.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/Threading.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/TimeValue.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -16866,18 +13960,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="external/install/Linux/install/include/llvm/Support/raw_ostream.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="external/install/Linux/install/include/llvm/Support/system_error.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="external/install/Linux/install/include/llvm/Support/type_traits.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -17245,8 +14329,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="external/src/pet/include/pet.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="external/src/pet/main.c" ex="false" tool="0" flavor2="2">
         <cTool>
         </cTool>
@@ -17254,8 +14336,6 @@
       <item path="external/src/pet/options.c" ex="false" tool="0" flavor2="2">
         <cTool>
         </cTool>
-      </item>
-      <item path="external/src/pet/options.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="external/src/pet/parse.c" ex="false" tool="0" flavor2="2">
         <cTool>
@@ -17273,21 +14353,13 @@
         <ccTool>
         </ccTool>
       </item>
-      <item path="external/src/pet/scan.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="external/src/pet/scop.c" ex="false" tool="0" flavor2="2">
         <cTool>
         </cTool>
       </item>
-      <item path="external/src/pet/scop.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="external/src/pet/scop_plus.cc" ex="false" tool="1" flavor2="4">
         <ccTool>
         </ccTool>
-      </item>
-      <item path="external/src/pet/scop_plus.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="external/src/pet/scop_yaml.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="external/src/pet/tests/QR.c" ex="false" tool="0" flavor2="2">
         <cTool>
@@ -17695,8 +14767,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="external/src/pet/version.h" ex="false" tool="3" flavor2="0">
-      </item>
       <folder path="PoTHoLeS-AutoESL/build/external">
         <ccTool>
           <incDir>
@@ -18004,30 +15074,8 @@
         <ccTool>
         </ccTool>
       </item>
-      <item path="src/graph/VerilogValue.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/graph/include/graph/DebugStream.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="src/graph/include/graph/NewExpression.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/graph/include/graph/ReferenceCountedObject.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/graph/include/graph/VerilogContext.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/graph/include/graph/VerilogExpression.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -18036,23 +15084,8 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="src/graph/include/graph/VerilogModule.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="src/graph/include/graph/VerilogMux.h"
             ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/graph/include/graph/VerilogPrintingFunctions.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/graph/include/graph/VerilogSymbol.h"
-            ex="false"
             tool="3"
             flavor2="0">
       </item>
@@ -18080,32 +15113,14 @@
           </incDir>
         </ccTool>
       </item>
-      <item path="src/gravel/gravel/VerilogSymbol.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/gravel/include/gravel/ReferenceCountedObject.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/gravel/include/gravel/VerilogSymbol.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="src/gravel/test/Test.cpp" ex="false" tool="1" flavor2="4">
         <ccTool>
         </ccTool>
-      </item>
-      <item path="src/include/potholes/analysis.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/include/potholes/lexicographic.h"
             ex="true"
             tool="3"
             flavor2="0">
-      </item>
-      <item path="src/include/potholes/map.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/include/potholes/set.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>

@@ -73,26 +73,11 @@ template <> class VerilogConstant_<Heap> : public VerilogConstantIf, public Veri
         return 0;
     }
     
-    VerilogValue_() : ReferenceCountedObject(1) // instantiate a reference counted object
+    VerilogConstant_()  // instantiate a reference counted object
     {
         
     
     }
-    
-};
-template <> class VerilogValue_<Stack> : public VerilogValueIf, public ReferenceCountedObject { 
-
-    VerilogValue_<Heap> * shadow;
-        public:    
-    int getOutput() { 
-        return shadow->getOutput();
-    }
-    VerilogValue_() : ReferenceCountedObject(1) // instantiate a reference counted object
-    {
-        shadow = new VerilogValue_<Heap>();
-    
-    }
-        
     
 };
 
