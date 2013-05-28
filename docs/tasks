@@ -1,3 +1,13 @@
+1st Task
+    Install Tcl interpreter in C file
+    Install CPlex
+    Rebuild Tcl flow on this computer
+    Fix Evaluation to walk through sets and evaluate
+    
+
+
+
+
 1st Task 
     Try intercepting Vivado Compilation Flow and Finding scops using source-based processing in PET
     Do manual code restructuring to form function level code (with external memories in top level and perfectly and imperfectly nested loop contents encapsulated within a function call)
@@ -8,3 +18,134 @@
 2nd Task
     Try to redefine control flow to separate 
     
+1st Source to Source Transformation
+
+1.1 Compile ASTProcessing Library
+1.1.2 Duplicate Statement Node
+1.1.3 Make New Statement Declaration
+1.1.3 Find appropriate enclosing statement for pth_scop
+1.1.4 Copy that pth_scop statement
+1.1.5 Create appropriate function declaration
+
+End Goal is 
+
+poly_func_ln_x_to_ln_y(A *, B *) {  // definition of polyhedral function
+
+for (...)
+    for (...)
+        Statement
+
+}
+
+poly_func_ln_x_to_ln_y(A, B); // call to polyhedral function
+
+Can then generate base-line code in auto-esl
+
+Can then generate new code by hoisting the statements into their own function
+
+Then do integration at verilog level (i.e. alternative implementation of loop constructs using pipelined logic)
+
+
+2nd Source to Source Transformation
+
+1.1.6 Create appropriate transfer code
+
+Apply to functions which only contains polyhedral code 
+
+poly_func_ln_x_to_ln_y(A *, B *) {
+
+A_l[100];
+B_l[100];
+
+for (...) {
+    transfer_read_ln_x_to_ln_y(A, A_l, B, B_l);
+    for (...) {
+            
+        C_l[...] = A_l[...] * B_l[...];
+    }   
+    transfer_write_ln_x_to_ln_y (C, C_l);
+}
+}
+
+3rd Source to Source Transformation
+
+Promote to scalars
+
+poly_func_ln_x_to_ln_y(A *, B *) {
+
+A_l[100];
+B_l[100];
+
+for (...) {
+    transfer_read_ln_x_to_ln_y(A, A_l, B, B_l);
+    for (...) {
+        
+       
+        A_1_s = A_l[...];
+        B_2_s = B_l[...];
+
+        C_3_s;
+
+        C_l[...] = A_l[...] * B_l[...];
+
+        C_3_s = A_1_s * B_2_s;
+
+        C_l[...] = C_3_s;
+    }   
+    transfer_write_ln_x_to_ln_y (C, C_l);
+}
+}
+
+
+4th Source To Source Transformation
+
+poly_func_ln_x_to_ln_y(A *, B *) {
+
+A_l[100];
+B_l[100];
+
+for (...) {
+    transfer_read_ln_x_to_ln_y(A, A_l, B, B_l);
+    for (...) {
+        
+       
+        A_1_s = A_l[...];
+        B_2_s = B_l[...];
+
+        C_3_s;
+
+        C_l[...] = A_l[...] * B_l[...];
+
+        poly_func_ln_x_to_ln_y_statements(A_1_s, B_2_s, &C_3_s);
+
+        C_l[...] = C_3_s;
+    }   
+    transfer_write_ln_x_to_ln_y (C, C_l);
+}
+}
+
+
+poly_func_ln_x_to_ln_y_statements is then compiled using autoesl
+result is bound into verilog version of poly_func_ln_x_to_ln_y (from my verilog generator)
+that is then bound into the rest of the autoesl program
+
+Flow then allows inner "For Loop" and Transfer Functions to overlap (or not)
+
+Flow also tests for parallelization of inner loop statements (strip mine)
+
+Can then play with transfer function ordering and on-chip mapping
+Can also play with external memory mapping for portions of code
+
+Can also represent banked access to arrays as multi-dimensional array. 
+
+
+
+2.0 Install CPlex 
+2.1 Port Code to New Mac
+2.2 Run TCL interpreter inside new "main" program
+2.3 Validate Old Flow
+
+3.0 Build Program Output as ISCC script (for standalone)
+3.1 Build driver for ISCC script (for integration)
+
+3.2 Apply source-to-source transformations to find new program
