@@ -1,0 +1,98 @@
+Clang AST Region - Defined by Start and End
+
+Definitions are re-orderable (although function definitions may also have dependencies and recursion means this structure may not be a tree)
+
+
+Potholes::BufferedRegion created for whole compilation unit - no preceding definitions
+
+Potholes::BufferedRegion created for each scop (with parent region the buffered region)
+Has Definitions containing VariableDefinitions and FunctionDefinitions as the definitive interface for this region
+
+Potholes::ScopRegion created for each scop (with parent region the buffered region)
+Has Definitions identical to the Buffered region
+
+
+Generate transformation does code generation and creates
+
+Potholes::ASTRegion for each scop created from Potholes::ScopRegion
+
+
+Promotion of 
+
+
+
+
+
+
+
+
+Clang AST Rewrite - Class which coordinates changes to regions of Source Buffer
+
+                            Delete Region
+                            Insert FunctionDefinition Region in Function Scope (Finds correct function scope from supplied SourceLocation)
+                            Insert VariableDefinition Region in Variable Scope (Finds correct variable scope from supplied SourceLocation)
+                            Insert FunctionCall Region at Statement (Inserts Region at SourceLocation, before or after)
+                            Create Region
+                            Decorate Region with Directive
+
+ 
+Transform - Class which build Potholes Region from Potholes Scop
+
+
+
+So... 
+
+Set analysis [Potholes::Analysis #auto "CMakeLists.txt"] 
+
+produces Clang AST in analysis object and does analysis
+
+transform -promote-scop-to-function $scop 
+
+takes pth_scop object 
+
+// types of regions
+
+struct FunctionDefinition;
+struct VariableDefinition;
+struct FunctionCall;
+struct Block;
+
+
+
+Each Type of Region can be represented as Potholes AST format
+
+Potholes::DefineRegion
+
+Potholes::InsertRegion<Type>: public Potholes::RewriteTransform
+Potholes::InsertRegion(Potholes::Rewriter, Potholes::Region,Potholes::Location location); 
+
+Potholes::CreateRegion<Type> 
+Potholes::CreateRegion(Potholes::Rewriter, Potholes::Scop);
+
+Potholes::DeleteRegion : public Potholes::RewriteTransform( Pt
+
+Potholes::TransformRegion : public Potholes::RewriteTransform
+
+Potholes::DecorateRegion : public Potholes::RewriteTransform
+
+ScopAttribute
+
+TransformRegion can do any AST manipulation of the region that does not change external interface
+
+SplitRegion
+
+Creating a project creates code from regions and puts it into buffer. 
+
+apply-inner-loop-pipelining just decorates regions with dependence breaking 
+
+apply-outer-loop-replication does hoisting into function and probably requires a data partitioning. 
+
+
+
+
+
+
+
+
+
+

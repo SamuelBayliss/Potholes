@@ -1,50 +1,62 @@
+# Potholes Library for TCL
 
-find_package(ISL REQUIRED)
+find_package(itcl REQUIRED)
+find_package(tcl REQUIRED)
 
-find_package(PET REQUIRED)
+find_package(clang REQUIRED)
+find_package(pet REQUIRED)
+find_package(isl REQUIRED)
 
-find_package(Boost 1.52 COMPONENTS program_options system filesystem REQUIRED)
+set(POTHOLES_FRONTEND_SOURCE potholes analysis extract options scop project consumer promote transform rewrite )
+
+set (POTHOLES_AST_SOURCES affine generate parallel ast statement)
+
+include_directories(${ITCL_INCLUDE_DIRS})
+
+include_directories("include")
+
+SET(CMAKE_CXX_FLAGS "-Wall -fno-rtti -O0 -g" )  
+
+add_library(Potholes SHARED ${POTHOLES_FRONTEND_SOURCE} ${POTHOLES_AST_SOURCES})
+if (ITCL_FOUND)
+    target_link_libraries(Potholes ${ITCL_LIBRARY})
+endif (ITCL_FOUND)
+
+if (TCL_FOUND)
+    target_link_libraries(Potholes ${TCL_LIBRARY})
+endif(TCL_FOUND)
+
+if (CLANG_FOUND)
+    add_definitions( -D __STDC_LIMIT_MACROS )
+    add_definitions( -D __STDC_CONSTANT_MACROS )
+    include_directories(${CLANG_INCLUDE_DIR})
+    target_link_libraries(Potholes ${CLANG_LIBRARIES})
+    
+endif (CLANG_FOUND)
+
+if(Boost_FOUND) 
+    include_directories(${BOOST_INCLUDE_DIR})
+    link_directories(${Boost_LIBRARY_DIR})
+    target_link_libraries(Potholes ${Boost_LIBRARIES})
+
+endif (Boost_FOUND)
+
+if (ISL_FOUND)
+    include_directories(${ISL_INCLUDE_DIR})
+    link_directories(${ISL_LIBRARY_DIR})
+    target_link_libraries(Potholes ${ISL_LIBRARIES})
+    message(${ISL_LIBRARIES})
+endif (ISL_FOUND)
+
+if (PET_FOUND)
+    include_directories(${PET_INCLUDE_DIR})
+    link_directories(${PET_LIBRARY_DIR})
+    target_link_libraries(Potholes ${PET_LIBRARIES})
+  
+endif (PET_FOUND)
 
 
-if (APPLE) 
-    set (CLANG_PREFIX ${BUILT_TOOLS_ARCH})
-    set (GMP_PREFIX ${MACPORTS_PREFIX})
-elseif(APPLE) 
-    set (CLANG_PREFIX /cas/apps/llvm-3.0)
-    set (GMP_PREFIX ${BUILT_TOOLS_ARCH}) 
-endif(APPLE)
-
-add_subdirectory(ASTProcessing)
-add_subdirectory(gravel)
-
-set(ANALYSIS_SOURCE_FILES  main )
-
-set(POTHOLES_SOURCE_FILES map analysis frontend context scop prune)
-set(BOOST_USE_STATIC_LIBS OFF)
-set(BOOST_USE_MULTITHREADED ON)
-set(BOOST_USE_STATIC_RUNTIME OFF)
-set(BOOST_ALL_DYN_LINK ON)
-
-include_directories(include)
-
-include_directories(${ISL_INCLUDE_DIR})
-
-include_directories(${PET_INCLUDE_DIR})
-include_directories(${CLANG_PREFIX}/include)
-
-add_executable(Analysis ${ANALYSIS_SOURCE_FILES})
-
-if (Boost_FOUND)
-include_directories(${BOOST_INCLUDE_DIR})
-link_directories(${Boost_LIBRARY_DIR})
-target_link_libraries(Analysis ${Boost_LIBRARIES})
-endif()
-
-
-
-add_library(Potholes ${POTHOLES_SOURCE_FILES})
-
-target_link_libraries(Analysis Potholes)
-
-target_link_libraries(Analysis ${ISL_LIBRARY})
-target_link_libraries(Analysis ${PET_LIBRARY})
+INSTALL(TARGETS Potholes
+        RUNTIME DESTINATION bin
+        LIBRARY DESTINATION lib
+)

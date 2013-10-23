@@ -1,1 +1,54 @@
-This Directory contains wrapper scripts to encapsulate AutoESL features
+This Directory contains wrapper scripts to encapsulate AutoESL features (in itcl classes)
+
+# Do initial compile of the source code using CMake and Clang
+set analysis [create_analysis "CMakeLists.txt"];
+
+# Find static control code portions 
+set scops [find_static_control_parts $analysis];
+
+foreach scop ($scops) {
+    set analysis [apply_promotion_transformation $analysis $scop]
+    set dependencies [find_dependencies $scop]
+    set schedule [find_parallel_schedule $scop $dependencies]
+    set analysis [apply_inner_loop_pipelining_transformation $analysis $scop]
+    set analysis [apply_outer_loop_replication_transformation $analysis $scop]
+}
+% Generate output files from tranformed source code
+set project [create_project_from_analysis $analysis]
+
+% Add AutoESL solution information to project
+set project [add_solution_to_project $project $solution]
+
+% Sets appropriate flags
+compile_project
+
+
+---- or using itcl ----
+
+package require Potholes
+
+set analysis [Potholes::Analysis #auto "CMakeLists.txt"]
+
+foreach scop ([$analysis get -scops]) {
+    set dependencies [$analysis get -dependencies $scop]
+    set schedule [$analysis compute -parallel-schedule $dependencies]
+
+    $analysis get -tripcount $scop
+
+    $analysis generate $scop $schedule
+
+    $analysis transform -promote-scop-to-function $scop
+    $analysis transform -apply-inner-loop-pipelining $scop $schedule
+    $analysis transform -apply-outer-loop-replication $scop $schedule
+}
+
+# Adds code analysis to 
+set project [Potholes::Project #auto $analysis $solution]
+$project compile
+
+
+--- Jobs ---
+
+Install Itcl
+
+
