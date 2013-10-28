@@ -10,44 +10,22 @@ add_custom_target(benchmark)
 set(LINEAR_KERNELS
 2mm
 3mm
-atax
-bicg
-cholesky
-doitgen
-gemm
-gemver
-gesummv
-mvt
-symm
-syr2k
-syrk
-trisolv
-trmm
 )
 
 set(LINEAR_SOLVERS
 durbin
-dynprog
-gramschmidt
-lu
-ludcmp
+
 )
 set(DATAMINING
-correlation
-covariance
+
 )
 set(MEDLEY
 floyd-warshall
-reg_detect
+
 )
 
 set(STENCILS 
 adi
-fdtd-2d
-fdtd-apml
-jacobi-1d-imper
-jacobi-2d-imper
-seidel-2d
 )
 
 add_definitions( -DPOLYBENCH_USE_C99_PROTO )

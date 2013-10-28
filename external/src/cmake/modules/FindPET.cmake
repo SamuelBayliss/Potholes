@@ -22,7 +22,7 @@ find_path(PET_INCLUDE_DIR pet.h
 
 # find the clang library
 find_library(PET_LIBRARY
-             NAMES pet
+             NAMES libpet.a
              PATH_SUFFIXES lib64 lib
              PATHS   /usr/local
                    )

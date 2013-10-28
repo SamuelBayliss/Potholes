@@ -2,9 +2,11 @@
 include(FindPackageHandleStandardArgs)
 
 IF(NOT ITCL_FOUND)
-  FIND_LIBRARY(ITCL_LIBRARY libitcl3.4.dylib 
-    PATHS "${PROJECT_SOURCE_DIR}/external/build/itcl3.4.1")
-  FIND_PATH(ITCL_INCLUDE_DIRS itcl.h "${PROJECT_SOURCE_DIR}/external/include" DOC "ITCL includes")
+  FIND_LIBRARY(ITCL_LIBRARY libitcl3.4.so 
+    PATHS "${PROJECT_SOURCE_DIR}/external/build/itcl3.4.1" /usr/lib/itcl3.4 )
+  FIND_PATH(ITCL_INCLUDE_DIRS itcl.h 
+HINTS "${PROJECT_SOURCE_DIR}/external/include" /usr/include
+DOC "ITCL includes")
 ENDIF(NOT ITCL_FOUND)
 
 

@@ -4,7 +4,7 @@ set auto_path [linsert $auto_path 0 .]
 
 package require Potholes
 
-set database "/Users/sb1708/Work/shared-tools/PoTHoLeS-AutoESL/examples/compile_commands.json"
+set database "/home/sb1708/Work/shared-tools/PoTHoLeS-AutoESL/demo/compile_commands.json"
 
 set analysis [Potholes::Analysis #auto $database]
 

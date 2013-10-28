@@ -28,6 +28,6 @@ set (CMAKE_PREFIX_PATH ${CMAKE_SOURCE_DIR}/external/platforms/${CMAKE_SYSTEM_NAM
 set(CMAKE_CXX_COMPILER c++)
 set(CMAKE_C_COMPILER cc)
 
-
+add_subdirectory(benchmarks)
 add_subdirectory(src)
 add_subdirectory(scripts)

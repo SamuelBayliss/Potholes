@@ -4,6 +4,8 @@
  *
  * Created on October 8, 2013, 6:32 PM
  */
+#include <tcl.h>
+#include <itcl.h>
 
 #ifndef INITIALIZATION_H
 #define	INITIALIZATION_H

@@ -58,6 +58,8 @@
 #include <iostream>
 #include <cassert>
 
+#include <cstring>
+
 #include <isl/ast_build.h>
 #include <isl/schedule.h>
 #include <isl/flow.h>

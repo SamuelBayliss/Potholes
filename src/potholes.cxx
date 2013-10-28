@@ -1,8 +1,5 @@
 
 
-#include <tcl.h>
-
-#include <itcl.h>
 
 #include <iostream>
 
@@ -25,17 +22,29 @@
 
 using namespace potholes;
 
+#include <iostream>
 
-int Potholes_Init(Tcl_Interp * interp) {
+int array_analysis(ClientData cData, Tcl_Interp * interp, int argc, const char * argv[]){
+  std::cerr << "analysis" << "\n";
+  return TCL_OK;
+}
 
-  if (Itcl_Init(interp) == TCL_ERROR) { 
+extern int Potholes_Init(Tcl_Interp * interp) {
+  
+    if (Itcl_Init(interp) == TCL_ERROR) { 
+    return TCL_ERROR;
+    }
+
+  //if (Itcl_InitStubs(interp, "3.1",0) == 0L) { 
+  //   return TCL_ERROR;
+  // }
+  std::cerr << "Hello World" << "\n";
+
+  
+  if (Itcl_RegisterC(interp, "analysis_initialize", array_analysis, 0, 0) != TCL_OK) { 
     return TCL_ERROR;
   }
-    
-  if (Itcl_RegisterC(interp, "analysis_initialize", Analysis::Create, 0, 0) != TCL_OK) { 
-    return TCL_ERROR;
-  }
-
+  /*
   if (Itcl_RegisterC(interp, "analysis_destroy", Analysis::Destroy, 0, 0) != TCL_OK) { 
     return TCL_ERROR;
   }
@@ -70,7 +79,7 @@ int Potholes_Init(Tcl_Interp * interp) {
   if (Itcl_RegisterC(interp, "scop_filename", Scop::GetFilename, 0, 0) != TCL_OK) { 
     return TCL_ERROR;
   }
-  
+  */
     return TCL_OK;
 }
 

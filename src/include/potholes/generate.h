@@ -20,6 +20,8 @@
 #include <isl/ast.h>
 #include <isl/ast_build.h>
 
+#include <string>
+
 #include <potholes/ast.h>
 
 typedef std::string TypeName;

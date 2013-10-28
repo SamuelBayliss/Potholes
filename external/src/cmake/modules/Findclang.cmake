@@ -43,8 +43,8 @@ find_library(CLANG_REWRITE_LIBRARY
 
 find_library(LLVM_LIBRARY
              NAMES LLVM-3.3
-             PATH_SUFFIXES lib64 lib
-             PATHS   /usr/local
+             PATH_SUFFIXES 
+             PATHS   /usr/local/lib
 )
 
 # handle the QUIETLY and REQUIRED arguments and set CLANG_FOUND to TRUE if all listed variables are TRUE
@@ -52,4 +52,4 @@ include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(CLANG DEFAULT_MSG CLANG_BASIC_LIBRARY CLANG_INCLUDE_DIR)
 mark_as_advanced(CLANG_INCLUDE_DIR CLANG_LIBRARY)
 
-set (CLANG_LIBRARIES ${CLANG_BASIC_LIBRARY} ${CLANG_TOOLING_LIBRARY} ${CLANG_REWRITE_LIBRARY} ${LLVM_LIBRARY} )
+set (CLANG_LIBRARIES ${CLANG_BASIC_LIBRARY} ${CLANG_TOOLING_LIBRARY} ${CLANG_REWRITE_LIBRARY} )

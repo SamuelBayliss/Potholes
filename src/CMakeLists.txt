@@ -1,15 +1,17 @@
 # Potholes Library for TCL
 
 find_package(itcl REQUIRED)
-find_package(tcl REQUIRED)
+find_package(TCL REQUIRED)
 
 find_package(clang REQUIRED)
-find_package(pet REQUIRED)
+find_package(PET REQUIRED)
 find_package(isl REQUIRED)
 
-set(POTHOLES_FRONTEND_SOURCE potholes analysis extract options scop project consumer promote transform rewrite )
+#set(POTHOLES_FRONTEND_SOURCE potholes analysis extract options scop project consumer promote transform rewrite )
 
-set (POTHOLES_AST_SOURCES affine generate parallel ast statement)
+#set (POTHOLES_AST_SOURCES affine generate parallel ast statement)
+set(POTHOLES_FRONTEND_SOURCE potholes)
+set(POTHOLES_AST_SOURCES )
 
 include_directories(${ITCL_INCLUDE_DIRS})
 
@@ -30,6 +32,7 @@ if (CLANG_FOUND)
     add_definitions( -D __STDC_LIMIT_MACROS )
     add_definitions( -D __STDC_CONSTANT_MACROS )
     include_directories(${CLANG_INCLUDE_DIR})
+message(${CLANG_LIBRARIES})
     target_link_libraries(Potholes ${CLANG_LIBRARIES})
     
 endif (CLANG_FOUND)
@@ -52,7 +55,7 @@ if (PET_FOUND)
     include_directories(${PET_INCLUDE_DIR})
     link_directories(${PET_LIBRARY_DIR})
     target_link_libraries(Potholes ${PET_LIBRARIES})
-  
+    message(${PET_LIBRARIES})
 endif (PET_FOUND)
 
 
