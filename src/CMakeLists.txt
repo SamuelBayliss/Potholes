@@ -1,11 +1,13 @@
 # Potholes Library for TCL
 
-find_package(itcl REQUIRED)
+message(${CMAKE_MODULE_PATH})
+
+find_package(Itcl REQUIRED)
 find_package(TCL REQUIRED)
 
-find_package(clang REQUIRED)
+find_package(Clang REQUIRED)
 find_package(PET REQUIRED)
-find_package(isl REQUIRED)
+find_package(ISL REQUIRED)
 
 #set(POTHOLES_FRONTEND_SOURCE potholes analysis extract options scop project consumer promote transform rewrite )
 
@@ -13,14 +15,15 @@ find_package(isl REQUIRED)
 set(POTHOLES_FRONTEND_SOURCE potholes)
 set(POTHOLES_AST_SOURCES )
 
-include_directories(${ITCL_INCLUDE_DIRS})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-include_directories("include")
+
 
 SET(CMAKE_CXX_FLAGS "-Wall -fno-rtti -O0 -g" )  
 
 add_library(Potholes SHARED ${POTHOLES_FRONTEND_SOURCE} ${POTHOLES_AST_SOURCES})
 if (ITCL_FOUND)
+    include_directories(${ITCL_INCLUDE_DIR})
     target_link_libraries(Potholes ${ITCL_LIBRARY})
 endif (ITCL_FOUND)
 

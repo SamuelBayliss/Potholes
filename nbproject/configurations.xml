@@ -2,7 +2,193 @@
 <configurationDescriptor version="84">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df name="PoTHoLeS-AutoESL" root=".">
+      <df name="benchmarks">
+      </df>
       <df name="build">
+        <df name="benchmarks">
+          <df name="CMakeFiles">
+            <df name="2mm.dir">
+              <df name="linear-algebra">
+                <df name="kernels">
+                  <df name="2mm">
+                  </df>
+                </df>
+              </df>
+            </df>
+            <df name="3mm.dir">
+              <df name="linear-algebra">
+                <df name="kernels">
+                  <df name="3mm">
+                  </df>
+                </df>
+              </df>
+            </df>
+            <df name="adi.dir">
+              <df name="stencils">
+                <df name="adi">
+                </df>
+              </df>
+            </df>
+            <df name="benchmark.dir">
+            </df>
+            <df name="durbin.dir">
+              <df name="linear-algebra">
+                <df name="solvers">
+                  <df name="durbin">
+                  </df>
+                </df>
+              </df>
+            </df>
+            <df name="floyd-warshall.dir">
+              <df name="medley">
+                <df name="floyd-warshall">
+                </df>
+              </df>
+            </df>
+            <df name="polybench.dir">
+              <df name="utilities">
+              </df>
+            </df>
+          </df>
+          <df name="datamining">
+            <df name="correlation">
+              <in>correlation.c</in>
+              <in>correlation.h</in>
+            </df>
+            <df name="covariance">
+              <in>covariance.c</in>
+              <in>covariance.h</in>
+            </df>
+          </df>
+          <df name="linear-algebra">
+            <df name="kernels">
+              <df name="2mm">
+                <in>2mm.c</in>
+                <in>2mm.h</in>
+              </df>
+              <df name="3mm">
+                <in>3mm.c</in>
+                <in>3mm.h</in>
+              </df>
+              <df name="atax">
+                <in>atax.c</in>
+                <in>atax.h</in>
+              </df>
+              <df name="bicg">
+                <in>bicg.c</in>
+                <in>bicg.h</in>
+              </df>
+              <df name="cholesky">
+                <in>cholesky.c</in>
+                <in>cholesky.h</in>
+              </df>
+              <df name="doitgen">
+                <in>doitgen.c</in>
+                <in>doitgen.h</in>
+              </df>
+              <df name="gemm">
+                <in>gemm.c</in>
+                <in>gemm.h</in>
+              </df>
+              <df name="gemver">
+                <in>gemver.c</in>
+                <in>gemver.h</in>
+              </df>
+              <df name="gesummv">
+                <in>gesummv.c</in>
+                <in>gesummv.h</in>
+              </df>
+              <df name="mvt">
+                <in>mvt.c</in>
+                <in>mvt.h</in>
+              </df>
+              <df name="symm">
+                <in>symm.c</in>
+                <in>symm.h</in>
+              </df>
+              <df name="syr2k">
+                <in>syr2k.c</in>
+                <in>syr2k.h</in>
+              </df>
+              <df name="syrk">
+                <in>syrk.c</in>
+                <in>syrk.h</in>
+              </df>
+              <df name="trisolv">
+                <in>trisolv.c</in>
+                <in>trisolv.h</in>
+              </df>
+              <df name="trmm">
+                <in>trmm.c</in>
+                <in>trmm.h</in>
+              </df>
+            </df>
+            <df name="solvers">
+              <df name="durbin">
+                <in>durbin.c</in>
+                <in>durbin.h</in>
+              </df>
+              <df name="dynprog">
+                <in>dynprog.c</in>
+                <in>dynprog.h</in>
+              </df>
+              <df name="gramschmidt">
+                <in>gramschmidt.c</in>
+                <in>gramschmidt.h</in>
+              </df>
+              <df name="lu">
+                <in>lu.c</in>
+                <in>lu.h</in>
+              </df>
+              <df name="ludcmp">
+                <in>ludcmp.c</in>
+                <in>ludcmp.h</in>
+              </df>
+            </df>
+          </df>
+          <df name="medley">
+            <df name="floyd-warshall">
+              <in>floyd-warshall.c</in>
+              <in>floyd-warshall.h</in>
+            </df>
+            <df name="reg_detect">
+              <in>reg_detect.c</in>
+              <in>reg_detect.h</in>
+            </df>
+          </df>
+          <df name="stencils">
+            <df name="adi">
+              <in>adi.c</in>
+              <in>adi.h</in>
+            </df>
+            <df name="fdtd-2d">
+              <in>fdtd-2d.c</in>
+              <in>fdtd-2d.h</in>
+            </df>
+            <df name="fdtd-apml">
+              <in>fdtd-apml.c</in>
+              <in>fdtd-apml.h</in>
+            </df>
+            <df name="jacobi-1d-imper">
+              <in>jacobi-1d-imper.c</in>
+              <in>jacobi-1d-imper.h</in>
+            </df>
+            <df name="jacobi-2d-imper">
+              <in>jacobi-2d-imper.c</in>
+              <in>jacobi-2d-imper.h</in>
+            </df>
+            <df name="seidel-2d">
+              <in>seidel-2d.c</in>
+              <in>seidel-2d.h</in>
+            </df>
+          </df>
+          <df name="utilities">
+            <in>polybench.c</in>
+            <in>polybench.h</in>
+            <in>template-for-new-benchmark.c</in>
+            <in>template-for-new-benchmark.h</in>
+          </df>
+        </df>
         <df name="CMakeFiles">
           <df name="2.8.11.1">
             <df name="CompilerIdC">
@@ -1486,6 +1672,8 @@
       <df name="docs">
       </df>
       <df name="examples">
+        <df name="demo">
+        </df>
         <in>image_access.c</in>
         <in>image_access.h</in>
         <in>sob.c</in>
@@ -1528,10 +1716,6 @@
           </df>
         </df>
         <df name="include">
-          <in>itcl.h</in>
-          <in>itclDecls.h</in>
-          <in>itclInt.h</in>
-          <in>itclIntDecls.h</in>
         </df>
         <df name="install">
           <df name="Darwin">
@@ -1931,14 +2115,7 @@
                 <in>LoopBlocking.h</in>
                 <in>LoopSplit.h</in>
                 <in>LoopUnroll.h</in>
-                <in>ModificationNoteBuilder.h</in>
-                <in>ParentInfo.h</in>
-                <in>ReplaceExprWithStmt.h</in>
-                <in>StmtClone.h</in>
-                <in>StmtCollector.h</in>
-                <in>StmtEditor.h</in>
                 <in>StmtTraversal.h</in>
-                <in>Toolbox.h</in>
               </df>
             </df>
           </df>
@@ -1947,20 +2124,8 @@
           <df name="include">
             <df name="graph">
               <in>DebugStream.h</in>
-              <in>ReferenceCountedObject.h</in>
-              <in>VerilogContext.h</in>
-              <in>VerilogExpression.h</in>
               <in>VerilogModule.h</in>
               <in>VerilogPrintingFunctions.h</in>
-              <in>VerilogSymbol.h</in>
-            </df>
-          </df>
-          <in>VerilogValue.h</in>
-        </df>
-        <df name="gravel">
-          <df name="include">
-            <df name="gravel">
-              <in>ReferenceCountedObject.h</in>
               <in>VerilogSymbol.h</in>
             </df>
           </df>
@@ -1972,22 +2137,17 @@
             <in>analysis.h</in>
             <in>ast.h</in>
             <in>consumer.h</in>
-            <in>context.h</in>
             <in>extract.h</in>
-            <in>frontend.h</in>
             <in>function.h</in>
             <in>generate.h</in>
-            <in>map.h</in>
             <in>options.h</in>
             <in>parallel.h</in>
-            <in>potholes.h</in>
             <in>process.h</in>
             <in>project.h</in>
             <in>region.h</in>
             <in>relation.h</in>
             <in>rewrite.h</in>
             <in>scop.h</in>
-            <in>set.h</in>
             <in>statement.h</in>
             <in>tclBackedObject.h</in>
             <in>transform.h</in>
@@ -1997,9 +2157,6 @@
         </df>
         <df name="itcl3.4.1">
           <df name="generic">
-            <in>itcl.h</in>
-            <in>itclDecls.h</in>
-            <in>itclInt.h</in>
             <in>itclIntDecls.h</in>
           </df>
         </df>
@@ -2009,9 +2166,6 @@
             <in>itcl2TclOO.h</in>
             <in>itclDecls.h</in>
             <in>itclInt.h</in>
-            <in>itclIntDecls.h</in>
-            <in>itclMigrate2TclCore.h</in>
-            <in>itclTclIntStubsFcn.h</in>
             <in>itclVCInt.h</in>
             <in>itclVarsAndCmds.h</in>
           </df>
@@ -11928,64 +12082,12 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="src/ASTProcessing/include/clang/ASTProcessing/ModificationNoteBuilder.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/ASTProcessing/include/clang/ASTProcessing/ParentInfo.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/ASTProcessing/include/clang/ASTProcessing/ReplaceExprWithStmt.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/ASTProcessing/include/clang/ASTProcessing/StmtClone.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/ASTProcessing/include/clang/ASTProcessing/StmtCollector.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/ASTProcessing/include/clang/ASTProcessing/StmtEditor.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="src/ASTProcessing/include/clang/ASTProcessing/StmtTraversal.h"
             ex="true"
             tool="3"
             flavor2="0">
       </item>
-      <item path="src/ASTProcessing/include/clang/ASTProcessing/Toolbox.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/graph/VerilogValue.h" ex="true" tool="3" flavor2="0">
-      </item>
       <item path="src/graph/include/graph/DebugStream.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/graph/include/graph/ReferenceCountedObject.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/graph/include/graph/VerilogContext.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/graph/include/graph/VerilogExpression.h"
             ex="true"
             tool="3"
             flavor2="0">
@@ -12005,37 +12107,11 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="src/gravel/include/gravel/ReferenceCountedObject.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/gravel/include/gravel/VerilogSymbol.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="src/include/potholes/analysis.h" ex="true" tool="3" flavor2="0">
-      </item>
-      <item path="src/include/potholes/context.h" ex="true" tool="3" flavor2="0">
-      </item>
-      <item path="src/include/potholes/frontend.h" ex="true" tool="3" flavor2="0">
-      </item>
-      <item path="src/include/potholes/map.h" ex="true" tool="3" flavor2="0">
-      </item>
-      <item path="src/include/potholes/potholes.h" ex="true" tool="3" flavor2="0">
       </item>
       <item path="src/include/potholes/region.h" ex="true" tool="3" flavor2="0">
       </item>
       <item path="src/include/potholes/scop.h" ex="true" tool="3" flavor2="0">
-      </item>
-      <item path="src/include/potholes/set.h" ex="true" tool="3" flavor2="0">
-      </item>
-      <item path="src/itcl3.4.1/generic/itcl.h" ex="true" tool="3" flavor2="0">
-      </item>
-      <item path="src/itcl3.4.1/generic/itclDecls.h" ex="true" tool="3" flavor2="0">
-      </item>
-      <item path="src/itcl3.4.1/generic/itclInt.h" ex="true" tool="3" flavor2="0">
       </item>
       <item path="src/itcl3.4.1/generic/itclIntDecls.h"
             ex="true"
@@ -12049,21 +12125,6 @@
       <item path="src/itcl4.0.0/generic/itclDecls.h" ex="true" tool="3" flavor2="0">
       </item>
       <item path="src/itcl4.0.0/generic/itclInt.h" ex="true" tool="3" flavor2="0">
-      </item>
-      <item path="src/itcl4.0.0/generic/itclIntDecls.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/itcl4.0.0/generic/itclMigrate2TclCore.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/itcl4.0.0/generic/itclTclIntStubsFcn.h"
-            ex="true"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="src/itcl4.0.0/generic/itclVCInt.h" ex="true" tool="3" flavor2="0">
       </item>
@@ -12129,6 +12190,230 @@
             flavor2="4">
         <ccTool>
         </ccTool>
+      </item>
+      <item path="build/benchmarks/datamining/correlation/correlation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/datamining/covariance/covariance.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/2mm/2mm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/3mm/3mm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/atax/atax.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/bicg/bicg.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/cholesky/cholesky.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/doitgen/doitgen.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/gemm/gemm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/gemver/gemver.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/gesummv/gesummv.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/mvt/mvt.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/symm/symm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/syr2k/syr2k.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/syrk/syrk.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/trisolv/trisolv.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/kernels/trmm/trmm.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/solvers/durbin/durbin.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/solvers/dynprog/dynprog.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/solvers/gramschmidt/gramschmidt.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/solvers/lu/lu.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/linear-algebra/solvers/ludcmp/ludcmp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/medley/floyd-warshall/floyd-warshall.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/medley/reg_detect/reg_detect.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/stencils/adi/adi.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/stencils/fdtd-2d/fdtd-2d.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/stencils/fdtd-apml/fdtd-apml.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/stencils/jacobi-1d-imper/jacobi-1d-imper.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/stencils/jacobi-2d-imper/jacobi-2d-imper.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/stencils/seidel-2d/seidel-2d.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/utilities/polybench.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="build/benchmarks/utilities/template-for-new-benchmark.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+        </cTool>
       </item>
       <item path="build/external/src/Darwin/src/barvinok-build/cloog/source/version.c"
             ex="false"
@@ -19454,10 +19739,6 @@
         <cTool>
         </cTool>
       </item>
-      <item path="external/include/itclInt.h" ex="true" tool="3" flavor2="0">
-      </item>
-      <item path="external/include/itclIntDecls.h" ex="true" tool="3" flavor2="0">
-      </item>
       <folder path="PoTHoLeS-AutoESL/build/external/src/Darwin/src/barvinok-build">
         <cTool>
           <incDir>
@@ -19590,7 +19871,6 @@
         <ccTool>
           <incDir>
             <pElem>build/src</pElem>
-            <pElem>external/include</pElem>
           </incDir>
           <preprocessorList>
             <Elem>Potholes_EXPORTS</Elem>
@@ -19600,6 +19880,7 @@
       <item path="src/affine.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19615,6 +19896,7 @@
       <item path="src/analysis.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19630,6 +19912,7 @@
       <item path="src/ast.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19645,6 +19928,7 @@
       <item path="src/consumer.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19660,6 +19944,7 @@
       <item path="src/extract.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19675,6 +19960,7 @@
       <item path="src/generate.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19696,6 +19982,7 @@
       <item path="src/parallel.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19710,6 +19997,9 @@
       </item>
       <item path="src/potholes-promote-functions.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
+          <incDir>
+            <pElem>external/include</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/potholes.cxx" ex="false" tool="1" flavor2="4">
@@ -19717,6 +20007,7 @@
           <incDir>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
+            <pElem>../../development-environment/environment/include</pElem>
           </incDir>
           <preprocessorList>
             <Elem>__STDC_CONSTANT_MACROS</Elem>
@@ -19729,11 +20020,15 @@
       </item>
       <item path="src/process.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
+          <incDir>
+            <pElem>external/include</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/project.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19749,6 +20044,7 @@
       <item path="src/promote.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19763,11 +20059,15 @@
       </item>
       <item path="src/region.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
+          <incDir>
+            <pElem>external/include</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/rewrite.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19783,6 +20083,7 @@
       <item path="src/scop.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19798,6 +20099,7 @@
       <item path="src/statement.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19813,6 +20115,7 @@
       <item path="src/transform.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
+            <pElem>external/include</pElem>
             <pElem>src/include</pElem>
             <pElem>/usr/local/include</pElem>
           </incDir>
@@ -19827,6 +20130,9 @@
       </item>
       <item path="src/visitor.cxx" ex="false" tool="1" flavor2="4">
         <ccTool>
+          <incDir>
+            <pElem>external/include</pElem>
+          </incDir>
         </ccTool>
       </item>
     </conf>

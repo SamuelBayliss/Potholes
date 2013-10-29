@@ -22,12 +22,13 @@ project(POTHOLES)
 #    endif()
 #endif(APPLE)
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/external/src/cmake/modules")
-set (CMAKE_PREFIX_PATH ${CMAKE_SOURCE_DIR}/external/platforms/${CMAKE_SYSTEM_NAME})
+#set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/external/src/cmake/modules")
+#set (CMAKE_PREFIX_PATH ${CMAKE_SOURCE_DIR}/external/platforms/${CMAKE_SYSTEM_NAME})
 
 set(CMAKE_CXX_COMPILER c++)
 set(CMAKE_C_COMPILER cc)
 
+add_subdirectory(external)
 add_subdirectory(benchmarks)
 add_subdirectory(src)
 add_subdirectory(scripts)
