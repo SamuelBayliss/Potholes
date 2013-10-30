@@ -52,8 +52,8 @@ isl_union_map * pth_update_dependencies(isl_union_map * dependencies, isl_map * 
 }
 
 isl_schedule * pth_compute_schedule(pth_scop *, isl_map * tiling) {
-    isl_schedule * schedule;
-    return schedule;
+//    isl_schedule * schedule;
+    return NULL;
     
 }
 
@@ -257,7 +257,7 @@ pth_scop * pth_apply_tiling(pth_scop * scop, unsigned tile_size) {
         printer = isl_printer_end_line(printer);
       
        isl_band_list * bands = isl_schedule_get_band_forest(schedule);
-       isl_val_list * indent = isl_val_list_alloc(ctx, 10);
+//       isl_val_list * indent = isl_val_list_alloc(ctx, 10);
        recursive_band_list(printer, bands, NULL);
      
             printer = isl_printer_start_line(printer);

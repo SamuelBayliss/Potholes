@@ -23,7 +23,7 @@ template <> std::map<std::string, potholes::Analysis *> potholes::TclBackedObjec
 
 
 potholes::Analysis::~Analysis(){ 
-   // std::cout << "Deleted Analysis" << std::endl;
+    std::cout << "Deleted Analysis" << std::endl;
 }
 
 

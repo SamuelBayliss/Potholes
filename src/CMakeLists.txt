@@ -9,11 +9,10 @@ find_package(Clang REQUIRED)
 find_package(PET REQUIRED)
 find_package(ISL REQUIRED)
 
-#set(POTHOLES_FRONTEND_SOURCE potholes analysis extract options scop project consumer promote transform rewrite )
 
-#set (POTHOLES_AST_SOURCES affine generate parallel ast statement)
-set(POTHOLES_FRONTEND_SOURCE potholes)
-set(POTHOLES_AST_SOURCES )
+set (POTHOLES_AST_SOURCES affine generate parallel ast statement)
+
+set(POTHOLES_FRONTEND_SOURCE potholes analysis extract options scop project consumer promote transform rewrite )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
