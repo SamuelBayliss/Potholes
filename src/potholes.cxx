@@ -10,24 +10,24 @@
 #include <isl/ctx.h>
 
 
-#include <potholes/process.h>
-#include <potholes/options.h>
+//#include <potholes/process.h>
+//#include <potholes/options.h>
     
 
 #include <potholes/Initialization.h>
 #include <potholes/tclBackedObject.h>
-#include <potholes/analysis.h>
-#include <potholes/project.h>
-#include <potholes/scop.h>
+//#include <potholes/analysis.h>
+//#include <potholes/project.h>
+//#include <potholes/scop.h>
 
 using namespace potholes;
 
 #include <iostream>
 
-/*int array_analysis(ClientData cData, Tcl_Interp * interp, int argc, const char * argv[]){
+int array_analysis(ClientData cData, Tcl_Interp * interp, int argc, const char * argv[]){
   std::cerr << "analysis" << "\n";
   return TCL_OK;
-}*/
+}
 
 extern int Potholes_Init(Tcl_Interp * interp) {
   
@@ -38,14 +38,13 @@ extern int Potholes_Init(Tcl_Interp * interp) {
   //if (Itcl_InitStubs(interp, "3.1",0) == 0L) { 
   //   return TCL_ERROR;
   // }
-  std::cerr << "Hello World" << "\n";
-
+ 
   
-  if (Itcl_RegisterC(interp, "analysis_initialize", Analysis::Create, 0, 0) != TCL_OK) { 
+  if (Itcl_RegisterC(interp, "analysis_initialize", array_analysis, 0, 0) != TCL_OK) { 
     return TCL_ERROR;
   }
   
-  if (Itcl_RegisterC(interp, "analysis_destroy", Analysis::Destroy, 0, 0) != TCL_OK) { 
+   if (Itcl_RegisterC(interp, "analysis_destroy", array_analysis, 0, 0) != TCL_OK) { 
     return TCL_ERROR;
   }
   /*
