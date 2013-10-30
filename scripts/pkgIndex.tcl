@@ -6,7 +6,7 @@ proc get_platform_library_extension { dir } {
 
     }
     Linux { 
-         load [file join $dir ../lib/libPotholes.dylib] 
+         load [file join $dir ../lib/libPotholes.so] 
     }
     default {
     error "Error : Unsupported Platform"
