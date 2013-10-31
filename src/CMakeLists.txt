@@ -1,21 +1,21 @@
 # Potholes Library for TCL
 
-#message(${CMAKE_MODULE_PATH})
 
 find_package(Itcl REQUIRED)
 find_package(TCL REQUIRED)
 
 find_package(LLVM REQUIRED)
 find_package(Clang REQUIRED)
+
 find_package(PET REQUIRED)
 find_package(ISL REQUIRED)
 
 
-set (POTHOLES_AST_SOURCES affine generate parallel ast statement)
+#set (POTHOLES_AST_SOURCES affine generate parallel ast statement)
 
 #set(POTHOLES_FRONTEND_SOURCE potholes analysis extract options scop project consumer promote transform rewrite )
 
-set(POTHOLES_FRONTEND_SOURCE potholes )
+set(POTHOLES_FRONTEND_SOURCE potholes analysis extract)
 
 
 
@@ -23,7 +23,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 
 
-SET(CMAKE_CXX_FLAGS "-Wall -fno-rtti -O0 -g" )  
+SET(CMAKE_CXX_FLAGS "-Wall -fno-rtti -O0 -g -Wl,-z,defs" )  
 
 add_library(Potholes SHARED ${POTHOLES_FRONTEND_SOURCE} ${POTHOLES_AST_SOURCES})
 if (ITCL_FOUND)
