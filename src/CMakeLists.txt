@@ -1,6 +1,7 @@
 # Potholes Library for TCL
 
 
+
 find_package(Itcl REQUIRED)
 find_package(TCL REQUIRED)
 
@@ -13,17 +14,19 @@ find_package(ISL REQUIRED)
 
 #set (POTHOLES_AST_SOURCES affine generate parallel ast statement)
 
-#set(POTHOLES_FRONTEND_SOURCE potholes analysis extract options scop project consumer promote transform rewrite )
+set(POTHOLES_FRONTEND_SOURCE potholes analysis extract options scop project consumer promote transform rewrite )
+
 
 set(POTHOLES_FRONTEND_SOURCE potholes analysis extract)
-
 
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 
 
-SET(CMAKE_CXX_FLAGS "-Wall -fno-rtti -O0 -g -Wl,-z,defs" )  
+
+SET(CMAKE_CXX_FLAGS "-Wall -fno-rtti -O0 -g -Wl,-z,defs -fvisibility=hidden" )  
+SET(CMAKE_SHARED_LINKER_FLAGS "-Wl,--exclude-libs=ALL")
 
 add_library(Potholes SHARED ${POTHOLES_FRONTEND_SOURCE} ${POTHOLES_AST_SOURCES})
 if (ITCL_FOUND)
@@ -43,7 +46,6 @@ if (CLANG_FOUND)
 endif (CLANG_FOUND)
 
 if (LLVM_FOUND) 
-   message(LLVMFOUND********)
    target_link_libraries(Potholes ${REQ_LLVM_LIBRARIES})
 endif (LLVM_FOUND)
 
@@ -67,6 +69,8 @@ if (PET_FOUND)
     message(${PET_LIBRARIES})
 endif (PET_FOUND)
 
+GET_TARGET_PROPERTY(POTHOLES_BIN_NAME Potholes LOCATION)
+add_custom_command(TARGET Potholes POST_BUILD COMMAND strip -x ${POTHOLES_BIN_NAME})
 
 INSTALL(TARGETS Potholes
         RUNTIME DESTINATION bin

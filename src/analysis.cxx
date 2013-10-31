@@ -58,7 +58,7 @@ potholes::Analysis::Analysis(int argc, const char * argv[] ) : ctx(isl_ctx_alloc
         std::for_each(sources.begin(), sources.end(), extractor);
         }
     
-      //std::cout << "Created Analysis" << std::endl;
+      std::cout << "Created Analysis" << std::endl;
 }
 
 void potholes::Analysis::registerTransform(potholes::Transform * transform) {
