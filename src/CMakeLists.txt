@@ -1,10 +1,11 @@
 # Potholes Library for TCL
 
-message(${CMAKE_MODULE_PATH})
+#message(${CMAKE_MODULE_PATH})
 
 find_package(Itcl REQUIRED)
 find_package(TCL REQUIRED)
 
+find_package(LLVM REQUIRED)
 find_package(Clang REQUIRED)
 find_package(PET REQUIRED)
 find_package(ISL REQUIRED)
@@ -34,16 +35,18 @@ if (CLANG_FOUND)
     add_definitions( -D __STDC_LIMIT_MACROS )
     add_definitions( -D __STDC_CONSTANT_MACROS )
     include_directories(${CLANG_INCLUDE_DIR})
-message(${CLANG_LIBRARIES})
-    target_link_libraries(Potholes ${CLANG_LIBRARIES})
-    
+    target_link_libraries(Potholes ${CLANG_LIBRARIES})   
 endif (CLANG_FOUND)
+
+if (LLVM_FOUND) 
+   message(LLVMFOUND********)
+   target_link_libraries(Potholes ${REQ_LLVM_LIBRARIES})
+endif (LLVM_FOUND)
 
 if(Boost_FOUND) 
     include_directories(${BOOST_INCLUDE_DIR})
     link_directories(${Boost_LIBRARY_DIR})
-    target_link_libraries(Potholes ${Boost_LIBRARIES})
-
+     target_link_libraries(Potholes ${Boost_LIBRARIES})
 endif (Boost_FOUND)
 
 if (ISL_FOUND)
