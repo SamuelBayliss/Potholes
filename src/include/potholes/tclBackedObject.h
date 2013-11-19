@@ -79,6 +79,8 @@ class TclBackedObject {
               
              char * val;
             
+	     // Check object class exists
+
              Tcl_DString buffer;
              Tcl_DStringInit(&buffer);
              Tcl_DStringAppendElement(&buffer, "uplevel");
@@ -91,7 +93,7 @@ class TclBackedObject {
              Tcl_DStringAppendElement(&buffer, ss.str().c_str());
 
              val = Tcl_DStringValue(&buffer);
-           //  std::cerr << "created " <<  val << "\n";
+	     
              
              if (Tcl_Eval(interp, val) != TCL_OK) {
                Tcl_DStringFree(&buffer);

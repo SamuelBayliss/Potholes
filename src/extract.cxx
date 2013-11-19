@@ -126,7 +126,7 @@
                 
         }
 
-        potholes::ExtractScop::ExtractScop(isl_ctx * ctx, ScopMap & sm, Locations & lm) : ctx(ctx),  sm(sm), lm(lm) {
+        potholes::ExtractScop::ExtractScop(isl_ctx * ctx, ScopMap & sm, Locations & lm) :   sm(sm), lm(lm) {
         };
 
             void potholes::ExtractScop::initialize(clang::tooling::CompilationDatabase * _db) {

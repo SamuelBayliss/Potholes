@@ -37,8 +37,10 @@ private:
     std::set<std::string> accelerated_functions;
     std::set<potholes::Transform *> code_transformations;
     Files sources;
+protected:
     
-public:
+public: 
+ Files getSources();
     // This needs to disappear into some other mechanism eventually
      potholes::ExtractScop extractor;
     
@@ -48,8 +50,9 @@ public:
 Analysis(int, const char * argv[]);
 void registerTransform(potholes::Transform *);
 std::set<potholes::Transform *> & getTransforms();
-Files getSources(); 
 
+static int getScops(Tcl_Interp * interp);
+static int getSources(Tcl_Interp * interp);
 // Get will look up 
 
 static int Get(ClientData, Tcl_Interp * , int, const char * argv[]);

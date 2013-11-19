@@ -52,7 +52,7 @@ namespace potholes {
 
     class ExtractScop {
     private:
-        isl_ctx * ctx;
+//        isl_ctx * ctx;
         clang::tooling::CompilationDatabase *  db;
         // multi-map of files to scops
 

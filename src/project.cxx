@@ -10,8 +10,6 @@
     
         clang::Rewriter rewriter;
    
-        //     std::cout << "Analysis is " << argv[1] << "\n";
- 
         potholes::Analysis * analysis = potholes::TclBackedObject<Analysis>::Lookup(argv[1]);
 
         if (analysis) {
@@ -23,8 +21,10 @@
             int success = Tool->run(newFrontendActionFactory(&factory, callback));
             
             if (success) {
-                // throw exception
-            }
+                
+            } else { 
+	      // throw exception
+	    }
             
         } else { 
             // Need to throw an exception here. 

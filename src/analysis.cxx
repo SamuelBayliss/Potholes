@@ -23,7 +23,7 @@ template <> std::map<std::string, potholes::Analysis *> potholes::TclBackedObjec
 
 
 potholes::Analysis::~Analysis(){ 
-   // std::cout << "Deleted Analysis" << std::endl;
+  //  std::cout << "Deleted Analysis" << std::endl;
 }
 
 
@@ -41,24 +41,23 @@ potholes::Analysis::Analysis(int argc, const char * argv[] ) : ctx(isl_ctx_alloc
         sm(potholes::ExtractScop::ScopMap()), ld(potholes::ExtractScop::Locations()), 
         extractor(potholes::ExtractScop(ctx, sm, ld)) { 
     
-   compile_commands = argv[1];
-     
-    std::string ErrorMessage;
-    ct::CompilationDatabase * database = ct::CompilationDatabase::autoDetectFromSource(compile_commands, ErrorMessage);
+    compile_commands = argv[1];
+  // std::cerr << argc << "command"  << "\n"; 
+     std::string ErrorMessage;
+      ct::CompilationDatabase * database = ct::CompilationDatabase::autoDetectFromSource(compile_commands, ErrorMessage);
   
-    if (database) {    
+     if (database) {    
         std::vector<std::string> files = database->getAllFiles(); 
 
-        sources.insert(sources.begin(), files.begin(),  std::remove_if(files.begin(),  files.end(),  isValidFile() ));
+	      sources.insert(sources.begin(), files.begin(),  std::remove_if(files.begin(),  files.end(),  isValidFile() ));
  
-        Tool = new clang::tooling::ClangTool(*database, sources); 
+	     Tool = new clang::tooling::ClangTool(*database, sources); 
      
-        extractor.initialize(database);
+         extractor.initialize(database);
 
-        std::for_each(sources.begin(), sources.end(), extractor);
-        }
+         std::for_each(sources.begin(), sources.end(), extractor);
+     }
     
-      //std::cout << "Created Analysis" << std::endl;
 }
 
 void potholes::Analysis::registerTransform(potholes::Transform * transform) {
@@ -99,38 +98,60 @@ potholes::Analysis::Files potholes::Analysis::getSources() {
     return sources;
 }
 
-int potholes::Analysis::Get(ClientData cData, Tcl_Interp * interp, int argc, const char * argv[]) {
-
- 
+int potholes::Analysis::getSources(Tcl_Interp * interp) {
+  Analysis * ptr = GetObjectPtr(interp);
+  
+  if (ptr) { 
+   const potholes::Analysis::Files & files = ptr->getSources();
+   std::cerr << "There are " << files.size() << " sources" << "\n";
+   Tcl_Obj ** objects = (Tcl_Obj **)(malloc(sizeof(Tcl_Obj *) * files.size()));
+    for (unsigned i = 0 ; i < files.size() ; i++ ) { 
+      objects[i] = Tcl_NewStringObj(files[0].c_str(), -1);
+    }
+    Tcl_Obj * list = Tcl_NewListObj(files.size(), objects);
+    Tcl_SetObjResult(interp, list);
+  }
+    return TCL_OK;
+}
+int potholes::Analysis::getScops(Tcl_Interp * interp) {
     Analysis * ptr = GetObjectPtr(interp);
     
-    unsigned n = ptr->extractor.GetScopCount();
-    
-   
-    
-    if (ptr) {
-//         char * val;
-        
+     if (ptr) {  
+         unsigned n = ptr->extractor.GetScopCount();
          // heap allocated array of Tcl Objects
-         Tcl_Obj ** objects = (Tcl_Obj **)(malloc(sizeof(Tcl_Obj *) * n));
-                 
-    for (unsigned i = 0 ; i < n ; i++ ) {
-        std::string name;
-        potholes::Scop * scop = ptr->extractor.GetScop(i);
-        
-        int success = scop->Register(interp, scop, "Potholes::Scop", name);
-        if (success == TCL_OK) {
-            objects[i] = Tcl_NewStringObj(name.c_str(), -1);
-        }
-    }
-         
-          Tcl_Obj * list = Tcl_NewListObj(n, objects);
-          Tcl_SetObjResult(interp, list);
-         
-    }
-    
-    
+         Tcl_Obj ** objects = (Tcl_Obj **)(malloc(sizeof(Tcl_Obj *) * n));               
+	 for (unsigned i = 0 ; i < n ; i++ ) {
+	   std::string name;
+	   potholes::Scop * scop = ptr->extractor.GetScop(i);
+	  
+	   int success = scop->Register(interp, scop, "Potholes::Scop", name);
+
+	   if (success == TCL_OK) {
+	     objects[i] = Tcl_NewStringObj(name.c_str(), -1);
+	   }
+	 }        
+         Tcl_Obj * list = Tcl_NewListObj(n, objects);
+         Tcl_SetObjResult(interp, list);    
+     }
     return TCL_OK;
+}
+
+
+int potholes::Analysis::Get(ClientData cData, Tcl_Interp * interp, int argc, const char * argv[]) {
+
+  if (argc == 2) { 
+
+    if (std::string(argv[1]) == "-scops"){ 
+      /* Sets Interpreter Result */
+      return getScops(interp);
+    } else if (std::string(argv[1]) == "-sources") {
+      /* Sets Interpreter Result */
+     return getSources(interp);
+    } else {
+      std::cerr << "unknown type" << std::endl;
+    }
+  }    
+  return TCL_ERROR;
 }
 
  
