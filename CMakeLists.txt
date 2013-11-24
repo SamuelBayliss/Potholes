@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 2.6)
 project(POTHOLES)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_BUILD_TYPE Debug)
+
 #if(DEFINED ENV{BUILT_TOOLS})	  
 #    set (BUILT_TOOLS $ENV{BUILT_TOOLS} )
 #else()

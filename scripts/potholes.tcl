@@ -6,6 +6,14 @@ set auto_path [linsert $auto_path 0 [file join $::env(ENVIRONMENT_PLATFORM_DIR) 
 
 package require Potholes
 
+set process_pid [pid]
+
+
+
+puts "The process pid = $process_pid"
+
+after 10000
+
 set database "/home/sb1708/Work/shared-tools/PoTHoLeS-AutoESL/demo/compile_commands.json"
 
 set analysis [Potholes::Analysis #auto $database]
