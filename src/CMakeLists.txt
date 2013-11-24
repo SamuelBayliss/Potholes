@@ -20,11 +20,14 @@ set(POTHOLES_FRONTEND_SOURCE potholes analysis extract options scop project cons
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+SET(CMAKE_CXX_FLAGS "-Wall -fno-rtti -O0 -g " )  
 
+if (CMAKE_HOST_APPLE)
+  SET(CMAKE_SHARED_LINKER_FLAGS " -fvisibility=hidden") 
+else()
+  SET(CMAKE_SHARED_LINKER_FLAGS "-Wl,--exclude-libs=ALL -Wl,-z,defs -fvisibility=hidden")
+endif()
 
-
-SET(CMAKE_CXX_FLAGS "-Wall -fno-rtti -O0 -g -Wl,-z,defs -fvisibility=hidden" )  
-SET(CMAKE_SHARED_LINKER_FLAGS "-Wl,--exclude-libs=ALL")
 
 add_library(Potholes SHARED ${POTHOLES_FRONTEND_SOURCE} ${POTHOLES_AST_SOURCES})
 if (ITCL_FOUND)

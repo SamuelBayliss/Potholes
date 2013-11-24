@@ -174,7 +174,7 @@ void potholes::Analysis::getFlags(potholes::FileName filename, std::vector<std::
 
     std::vector<std::string>::iterator token_iterator;
    
-    for (token_iterator != tokens.begin() ; token_iterator != tokens.end() ; token_iterator++) { 
+    for (token_iterator = tokens.begin() ; token_iterator != tokens.end() ; token_iterator++) { 
   
      
          std::cerr << "Hello" << *token_iterator<< "\n";
