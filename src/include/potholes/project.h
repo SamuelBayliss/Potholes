@@ -21,14 +21,14 @@ namespace potholes {
 class Project : public TclBackedObject<Project> { 
 private:
         potholes::RewriteCallback * callback;
-        
+	potholes::Analysis * analysis;
         
 public:
     Project(int, const char * argv[]);
     ~Project();
-    
+    potholes::Analysis * getAnalysis();
     static int Compile(ClientData, Tcl_Interp * , int, const char * argv[]);
-    static int Files(ClientData, Tcl_Interp * , int, const char * argv[]);
+    static int Get(ClientData, Tcl_Interp * , int, const char * argv[]);
     void generateCode();
 };
 

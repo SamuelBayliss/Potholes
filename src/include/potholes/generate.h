@@ -35,8 +35,8 @@ typedef std::map<VarName, TypeName> VarMap;
 std::string pth_generate_scop_name(pet_scop * scop);
 VarMap pth_generate_scop_function_prototype_arguments(pet_scop * scop); 
 std::vector<std::string> pth_generate_scop_function_invocation_arguments(pet_scop * scop);   
-std::string pth_generate_scop_function_invocation(pet_scop * scop);
-std::string pth_generate_scop_function_declaration(pet_scop * scop);
+std::string pth_generate_scop_function_invocation(pet_scop * scop, std::string name);
+std::string pth_generate_scop_function_declaration(pet_scop * scop, std::string name);
   void pth_generate_initialize(isl_ctx * );      
 
 pth_stmt * pth_get_scop_statement_by_id(pth_scop *, pth_id *);

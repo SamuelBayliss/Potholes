@@ -10,7 +10,8 @@
 
 #include "potholes/transform.h"
 
-
+#include <sstream>
+#include <algorithm>
 
 using namespace clang::tooling;
 namespace ct = clang::tooling;
@@ -35,16 +36,57 @@ public:
     }
     
 };
+void potholes::Analysis::addAcceleratedFunction(potholes::FileName file_name, potholes::FunctionName function_name) {
 
+  accelerated_functions.insert(potholes::FunctionPair(file_name, function_name));
+
+}
+
+void potholes::Analysis::addTransformedFile(potholes::FileName source, potholes::FileName destination)
+{
+  transformed_files.insert(potholes::TransformedPair(source, destination));
+}
+
+potholes::FileName potholes::Analysis::getSourceFile(potholes::FileName destination) { 
+
+  TransformedMap::iterator tmit;
+
+  for (tmit = transformed_files.begin() ; tmit != transformed_files.end() ; tmit++) { 
+    if (tmit->second == destination) { 
+      return tmit->first;
+    }
+  }
+  return "";
+}
+
+potholes::FileName potholes::Analysis::getTransformedFile(potholes::FileName source) { 
+  TransformedMap::iterator tmit = transformed_files.find(source);
+
+  return tmit->second;
+
+}
+
+// in future - have this function throw an exception if there are no accelerated functions
+
+std::string potholes::Analysis::getAcceleratedFunction(potholes::FileName name) { 
+
+  Analysis::FunctionMap::iterator fit = accelerated_functions.find(name);
+  if (fit != accelerated_functions.end() ) { 
+    return fit->second;
+  }
+
+  return "";
+
+}
 
 potholes::Analysis::Analysis(int argc, const char * argv[] ) : ctx(isl_ctx_alloc()), 
-        sm(potholes::ExtractScop::ScopMap()), ld(potholes::ExtractScop::Locations()), 
-        extractor(potholes::ExtractScop(ctx, sm, ld)) { 
+							       sm(potholes::ExtractScop::ScopMap()), ld(potholes::ExtractScop::Locations()), database(NULL),
+							       extractor(potholes::ExtractScop(ctx, sm, ld)) { 
     
     compile_commands = argv[1];
   // std::cerr << argc << "command"  << "\n"; 
      std::string ErrorMessage;
-      ct::CompilationDatabase * database = ct::CompilationDatabase::autoDetectFromSource(compile_commands, ErrorMessage);
+     database = ct::CompilationDatabase::autoDetectFromSource(compile_commands, ErrorMessage);
   
      if (database) {    
         std::vector<std::string> files = database->getAllFiles(); 
@@ -76,11 +118,11 @@ int potholes::Analysis::Transform(ClientData cData, Tcl_Interp * interp, int arg
     
     /* Register a transform and arguments for a particular analysis object */
     potholes::Analysis * analysis = potholes::TclBackedObject<Analysis>::GetObjectPtr(interp);
-    potholes::Scop * scop = potholes::TclBackedObject<potholes::Scop>::Lookup(argv[2]);
+     potholes::Scop * scop = potholes::TclBackedObject<potholes::Scop>::Lookup(argv[2]);
     
     if (scop) {
-        potholes::PromoteScop * transform = new potholes::PromoteScop(*analysis);
-        analysis->registerTransform(transform);
+       potholes::PromoteScop * transform = new potholes::PromoteScop(*analysis);
+	 analysis->registerTransform(transform);
     } else { 
         std::cerr << "Can't find Scop" << std::endl;
     }
@@ -93,10 +135,69 @@ int potholes::Analysis::Transform(ClientData cData, Tcl_Interp * interp, int arg
     return TCL_OK;
 }
 
+potholes::Analysis::Files potholes::Analysis::getTransformedFiles() { 
+  potholes::Analysis::Files files;
+
+  TransformedMap::iterator tmit;
+  for (tmit= transformed_files.begin() ; tmit!= transformed_files.end() ; tmit++) { 
+    files.push_back(tmit->second);
+
+  }
+  return files;
+}
 
 potholes::Analysis::Files potholes::Analysis::getSources() {
     return sources;
 }
+
+void potholes::Analysis::getFlags(potholes::FileName filename, std::vector<std::string>& flags) { 
+
+  potholes::FileName source = getSourceFile(filename);
+
+  std::vector<ct::CompileCommand> commands  = database->getCompileCommands(source);
+  
+  // filter out include and define keywords crudely
+
+
+   std::cout << source << " " <<  commands.size() << std::endl;
+   //  assert(commands.size() == 1);  
+
+   std::vector<ct::CompileCommand>::iterator it;
+  for (it = commands.begin() ; it != commands.end() ; it++) { 
+    
+    // std::string& command = it->CommandLine;
+
+    std::vector<std::string> tokens = it->CommandLine;
+
+    //    istringstream iss(command);
+    //  std::copy(istream_iterator<std::string>(iss),istream_iterator<std::string>(), back_inserter<std::vector<std::string> >(tokens));
+
+    std::vector<std::string>::iterator token_iterator;
+   
+    for (token_iterator != tokens.begin() ; token_iterator != tokens.end() ; token_iterator++) { 
+  
+     
+         std::cerr << "Hello" << *token_iterator<< "\n";
+	 /*
+    if (token_iterator->find("-I") != std::string::npos) {
+	flags.push_back(*token_iterator);
+	std::cout << *token_iterator << "\n";
+      }
+
+      if (token_iterator->find("-D") != std::string::npos) {
+	flags.push_back(*token_iterator);
+	std::cout << *token_iterator << "\n";
+      }
+
+    }
+    std::cout << "Hello World"<< "\n";
+*/
+
+    }
+    std::cerr << "And Again World"<< "\n";
+  }
+   
+  }
 
 int potholes::Analysis::getSources(Tcl_Interp * interp) {
   Analysis * ptr = GetObjectPtr(interp);

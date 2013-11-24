@@ -4,13 +4,18 @@
 #include <potholes/transform.h>
 #include <potholes/consumer.h>
 #include <potholes/rewrite.h>
+#include <string>
+
+potholes::Analysis * potholes::Project::getAnalysis() { 
+  return analysis;
+}
 
     potholes::Project::Project(int val, const char * argv[]) {
         std::cout << "Created Project" << std::endl;
     
         clang::Rewriter rewriter;
    
-        potholes::Analysis * analysis = potholes::TclBackedObject<Analysis>::Lookup(argv[1]);
+        analysis = potholes::TclBackedObject<Analysis>::Lookup(argv[1]);
 
         if (analysis) {
      
@@ -21,7 +26,7 @@
             int success = Tool->run(newFrontendActionFactory(&factory, callback));
             
             if (success) {
-                
+	       potholes::Analysis::Files files =  callback->getTransformedFiles();
             } else { 
 	      // throw exception
 	    }
@@ -53,10 +58,18 @@
        // std::cout << "Generating Transformed Code" << "\n";
     }
     
-    int potholes::Project::Files(ClientData data, Tcl_Interp * interp, int argc, const char * argv[]) {
+    int potholes::Project::Get(ClientData data, Tcl_Interp * interp, int argc, const char * argv[]) {
+
+
+      // assert(argc >= 1);
+
+      std::string argtype = argv[1];
+
+      if (argtype.compare("-files") == 0){ 
+
           potholes::Project * project = potholes::TclBackedObject<Project>::GetObjectPtr(interp);
-        
-          Analysis::Files files = project->callback->getTransformedFiles();
+	  Analysis * analysis = project->getAnalysis();
+        Analysis::Files files = analysis->getTransformedFiles();
           
         Tcl_Obj ** objects = (Tcl_Obj **)(malloc(sizeof(Tcl_Obj *) * files.size()));
         unsigned i = 0;
@@ -65,10 +78,46 @@
         }
           
           Tcl_Obj * list = Tcl_NewListObj(files.size(), objects);
-          Tcl_SetObjResult(interp, list);
-         
-          
-          return TCL_OK;
+          Tcl_SetObjResult(interp, list); 
+	  return TCL_OK;
+                   
+      } else if (argtype.compare("-flags") == 0) {
+	
+	std::string filename = argv[2];
+	
+	potholes::Project * project = potholes::TclBackedObject<Project>::GetObjectPtr(interp);
+	Analysis * analysis = project->getAnalysis();
+
+	assert(analysis);
+
+	std::vector<std::string> flags;
+	analysis->getFlags(filename, flags);
+
+	Tcl_Obj ** objects = (Tcl_Obj **)(malloc(sizeof(Tcl_Obj *) * flags.size()));
+	unsigned i = 0;
+	for (std::vector<std::string>::iterator it = flags.begin() ; it != flags.end() ; it++ ) {
+             objects[i++] = Tcl_NewStringObj((*it).c_str(), -1);
+        }
+	Tcl_Obj * list = Tcl_NewListObj(flags.size(), objects);
+	Tcl_SetObjResult(interp, list);
+	  return TCL_OK;
+      } else if (argtype.compare("-function")) { 
+
+	std::string filename = argv[2];
+
+	// get the correct analysis object   
+	potholes::Project * project = potholes::TclBackedObject<Project>::GetObjectPtr(interp);
+	Analysis * analysis = project->getAnalysis();
+	potholes::FunctionName name = analysis->getAcceleratedFunction(filename);
+
+	Tcl_Obj * object = Tcl_NewStringObj(name.c_str(), -1);
+	Tcl_SetObjResult(interp, object);
+	
+	  return TCL_OK;
+      }
+
+
+          return TCL_ERROR;
           
     }
     

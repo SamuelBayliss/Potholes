@@ -77,9 +77,11 @@ std::string pth_generate_scop_name(pet_scop * scop) {
 
 
 
-std::string pth_generate_scop_function_invocation(pet_scop * scop) {
+std::string pth_generate_scop_function_invocation(pet_scop * scop, std::string function_name) {
     std::stringstream ss;
     
+    
+
      isl_id * mem = pth_memory_space_id();
     
      ss << "double *" << " " << isl_id_get_name(mem) << ";" << "\n";
@@ -96,8 +98,8 @@ std::string pth_generate_scop_function_invocation(pet_scop * scop) {
     //    if (argits != invocation_arguments.end()) ss << ",";
     }
      
-    ss << pth_generate_scop_name(scop) << "(";
-   
+     // ss << pth_generate_scop_name(scop) << "(";
+     ss << function_name << "(";
             
      argits = invocation_arguments.begin();
     
@@ -713,7 +715,7 @@ isl_ast_node_list * pth_scop_populate_array_definitions(pth_scop * scop) {
 
 
 
-std::string pth_generate_scop_function_declaration(pet_scop * pscop) {
+std::string pth_generate_scop_function_declaration(pet_scop * pscop, std::string function_name) {
 
     pscop = pet_scop_align_params(pscop);
     

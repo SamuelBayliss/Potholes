@@ -15,9 +15,11 @@ foreach source [$analysis get -sources] {
 }
 
 foreach scop [$analysis get -scops] { 
-    puts $scop 
+    #puts $scop 
     set filename [$scop filename]
-    puts $filename
+    #puts $filename
+    $analysis transform -promote-scop-to-function $scop
+
 }
 
 
@@ -26,13 +28,14 @@ foreach scop [$analysis get -scops] {
 set solution "ZynqSolution"
 set project [Potholes::Project #auto $analysis $solution]
 
-#$project compile
+$project compile
 
-#foreach file [$project files -changed] {
-#    puts "Transformed Source : $file"
-#}
+foreach file [$project get -files] {
+    puts "Transformed Source : $file"
+}
 
 
 
-#itcl::delete object $project
+itcl::delete object $project
 itcl::delete object $analysis
+

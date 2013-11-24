@@ -25,7 +25,7 @@
          void potholes::PromoteScop::Initialize(clang::ASTContext& Context) {
 
 
-        //    std::cout << "Initialized Promotion Transformation" << "\n";
+            std::cout << "Initialized Promotion Transformation" << "\n";
 
         }
 
@@ -65,6 +65,8 @@
             
             Analysis::Files paths = analysis.getSources();
             
+	    std::string function_name = "accelerated_scop";
+
             for (pit = paths.begin(); pit != paths.end(); pit++) {
                // std::cout << getAbsolutePath(*pit) << std::endl;
                 potholes::Scop * scop = analysis.extractor.GetScop(getAbsolutePath(*pit));
@@ -87,7 +89,7 @@
                                 clang::SourceLocation fs = file_start.getLocWithOffset(start);
                                 clang::SourceLocation fe = file_start.getLocWithOffset(finish);
 
-                                rewriter.ReplaceText(clang::SourceRange(fs, fe), pth_generate_scop_function_invocation(scop->scop));
+                                rewriter.ReplaceText(clang::SourceRange(fs, fe), pth_generate_scop_function_invocation(scop->scop, function_name));
                             }
                         }
                     }
@@ -107,7 +109,6 @@
             
             std::vector<std::string>::iterator pit;
             for (pit = paths.begin(); pit != paths.end(); pit++) {
-
                 potholes::Scop * scop = analysis.extractor.GetScop(getAbsolutePath(*pit));
                 clang::SourceManager & sm = rewriter.getSourceMgr();
                 clang::SourceManager::fileinfo_iterator fit;
@@ -124,10 +125,12 @@
                             
                             std::stringstream  ss;
                             ss << "/* Begin Accelerated Scop Definition */ \n";
-                            ss << pth_generate_scop_function_declaration(scop->scop) << "\n";
+
+			    std::string function_name = "accelerated_scop";
+                            ss << pth_generate_scop_function_declaration(scop->scop, function_name) << "\n";
                             ss << "/* End Accelerated Scop Definition */ \n";
                             rewriter.InsertTextAfter(insertLocation, ss.str());
-                              
+                            analysis.addAcceleratedFunction(getAbsolutePath(*pit), function_name);
                         }
                     }
                 }

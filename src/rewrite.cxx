@@ -62,7 +62,8 @@
                           */
                             std::string output_file_name = std::string(name.str()) + "/" + std::string(stem) + "_vivado" + std::string(extension);
                      
-                            transformed_files.push_back(output_file_name);
+                            //transformed_files.push_back(output_file_name);
+			    analysis.addTransformedFile(fe->getName(), output_file_name);
                            // std::cout << "output_file_name is " << output_file_name << "\n";
                             
                          std::ofstream  output(output_file_name.c_str(), std::ios::out);

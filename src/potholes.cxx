@@ -53,29 +53,26 @@ extern int __attribute__ ((visibility ("default"))) Potholes_Init(Tcl_Interp * i
   if (Itcl_RegisterC(interp, "analysis_get", Analysis::Get, 0, 0) != TCL_OK) { 
     return TCL_ERROR;
   }
-  /*
+  
   if (Itcl_RegisterC(interp, "analysis_transform", Analysis::Transform, 0, 0) != TCL_OK) { 
     return TCL_ERROR;
   }
-  
-  */
- 
+
   if (Itcl_RegisterC(interp, "project_initialize", Project::Create, 0, 0) != TCL_OK) { 
     return TCL_ERROR;
   }
-  if (Itcl_RegisterC(interp, "project_files", Project::Files, 0, 0) != TCL_OK) { 
+  if (Itcl_RegisterC(interp, "project_get", Project::Get, 0, 0) != TCL_OK) { 
     return TCL_ERROR;
   }
 
   
-  
   if (Itcl_RegisterC(interp, "project_destroy", Project::Destroy, 0, 0) != TCL_OK) { 
     return TCL_ERROR;
   }
-   if (Itcl_RegisterC(interp, "project_compile", Project::Compile, 0, 0) != TCL_OK) { 
+  /*   if (Itcl_RegisterC(interp, "project_compile", Project::Compile, 0, 0) != TCL_OK) { 
     return TCL_ERROR;
   }
-  
+  */
   
   if (Itcl_RegisterC(interp, "scop_filename", Scop::GetFilename, 0, 0) != TCL_OK) { 
     return TCL_ERROR;

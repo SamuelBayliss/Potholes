@@ -17,7 +17,7 @@ namespace eval ::Potholes:: {
 	method init { args } @analysis_initialize
         method destroy { } @analysis_destroy
         method get { type } @analysis_get
-      #  method transform { args } @analysis_transform
+        method transform { args } @analysis_transform
         }
 
     } 
